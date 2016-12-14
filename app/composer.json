@@ -3,8 +3,22 @@
     "config": {
         "vendor-dir": "Vendor"
     },
+    "repositories": [
+    	{
+    		"type": "vcs",
+    		"url": "git://github.com/sizuhiko/Bdd.git"
+    	}
+    ],
     "require": {
         "cakephp/cakephp": "2.5.*",
-        "josegonzalez/cakephp-environments": "1.0.0"
+        "josegonzalez/cakephp-environments": "1.0.0",
+        "guzzle/guzzle": "~3.9",
+        "guzzlehttp/guzzle": "^6.2"
+    },
+    "require-dev": {
+    	"pear/console_commandline": "@dev",
+    	"pear/pear_exception": "@dev",
+        "sizuhiko/Bdd": "dev-master",
+        "behat/mink-goutte-driver": "*"
     }
 }
