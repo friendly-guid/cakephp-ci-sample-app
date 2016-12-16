@@ -4,20 +4,20 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "7121cabdf3ea9dfe45f89867be736832",
+    "content-hash": "52f9002d3161775f8a9ffd935eda61f6",
     "packages": [
         {
             "name": "cakedc/migrations",
-            "version": "2.5.0",
+            "version": "2.3.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/CakeDC/migrations.git",
-                "reference": "8f34f0222c4bf08c5bf8ca3d16d3d486065a52d5"
+                "reference": "9369efd652d4d45e26ba4ff1a773007bb939d794"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/CakeDC/migrations/zipball/8f34f0222c4bf08c5bf8ca3d16d3d486065a52d5",
-                "reference": "8f34f0222c4bf08c5bf8ca3d16d3d486065a52d5",
+                "url": "https://api.github.com/repos/CakeDC/migrations/zipball/9369efd652d4d45e26ba4ff1a773007bb939d794",
+                "reference": "9369efd652d4d45e26ba4ff1a773007bb939d794",
                 "shasum": ""
             },
             "require": {
@@ -42,7 +42,7 @@
                 "cakephp",
                 "migrations"
             ],
-            "time": "2016-10-11T21:20:20+00:00"
+            "time": "2014-10-16T09:19:38+00:00"
         },
         {
             "name": "cakephp/cakephp",
