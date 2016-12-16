@@ -10,7 +10,7 @@ class RoutesTest extends CakeTestCase{
 	/**
 	 * @dataProvider exampleUrls
 	 */
-	public function test配列形式からURL文字列に変換できること($name, $string, $array) {
+	public function test配列形式からリンク文字列に変換できること($name, $string, $array) {
 		$this->assertEquals($string, Router::url($array), $name);
 	}
 	/**
