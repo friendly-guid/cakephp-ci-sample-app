@@ -42,8 +42,6 @@ class PostTest extends CakeTestCase {
 	 * @dataProvider exampleValidationErrors
 	 */
 	public function testバリデーションエラー($column, $value, $message){
-		$default = ['title'=>'タイトル', 'body'=>'本文'];
-		
 		$post = Fabricate::build('Post', [$column=>$value]);
 		$this->assertFalse($post->validates());
 		$this->assertEquals([$message], $this->Post->validationErrors[$column]);
