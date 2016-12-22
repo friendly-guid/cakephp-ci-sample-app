@@ -17,3 +17,223 @@ Request URL: /test
 Stack Trace:
 #0 /var/www/application/current/app/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #1 {main}
+2016-12-22 07:27:44 Error: [MissingTableException] Table posts for model Post was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'posts',
+  'class' => 'Post',
+  'ds' => 'default',
+)
+Stack Trace:
+#0 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Model/Model.php(3572): Model->setSource('posts')
+#1 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/TestSuite/Fixture/CakeTestFixture.php(144): Model->getDataSource()
+#2 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/TestSuite/Fixture/CakeTestFixture.php(120): CakeTestFixture->init()
+#3 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/TestSuite/Fixture/CakeFixtureManager.php(163): CakeTestFixture->__construct()
+#4 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/TestSuite/Fixture/CakeFixtureManager.php(77): CakeFixtureManager->_loadFixtures(Array)
+#5 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/TestSuite/CakeTestRunner.php(57): CakeFixtureManager->fixturize(Object(PostTest))
+#6 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/TestSuite/CakeTestSuiteCommand.php(98): CakeTestRunner->doRun(Object(PHPUnit_Framework_TestSuite), Array)
+#7 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/TestSuite/CakeTestSuiteDispatcher.php(259): CakeTestSuiteCommand->run(Array)
+#8 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/TestSuite/CakeTestSuiteDispatcher.php(96): CakeTestSuiteDispatcher->_runTestCase()
+#9 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/TestSuite/CakeTestSuiteDispatcher.php(113): CakeTestSuiteDispatcher->dispatch()
+#10 /var/www/application/current/app/webroot/test.php(89): CakeTestSuiteDispatcher::run()
+#11 {main}
+2016-12-22 07:27:44 Error: Fatal Error (4): syntax error, unexpected 'echo' (T_ECHO) in [/var/www/application/current/app/View/Layouts/default.ctp, line 40]
+2016-12-22 07:27:44 Error: [FatalErrorException] syntax error, unexpected 'echo' (T_ECHO)
+Stack Trace:
+#0 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/applic...', 40)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/applic...', 40, Array)
+#2 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/applic...', 40, Array)
+#3 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-12-22 07:28:16 Error: [MissingTableException] Table posts for model Post was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'posts',
+  'class' => 'Post',
+  'ds' => 'default',
+)
+Request URL: /posts
+Stack Trace:
+#0 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Model/Model.php(3572): Model->setSource('posts')
+#1 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Model/Model.php(2950): Model->getDataSource()
+#2 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Model/Model.php(2922): Model->_readDataSource('all', Array)
+#3 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Controller/Component/PaginatorComponent.php(196): Model->find('all', Array)
+#4 /var/www/application/current/app/Controller/PostsController.php(13): PaginatorComponent->paginate()
+#5 [internal function]: PostsController->index()
+#6 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(PostsController), Array)
+#7 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#8 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#9 /var/www/application/current/app/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2016-12-22 07:28:16 Error: Fatal Error (4): syntax error, unexpected 'echo' (T_ECHO) in [/var/www/application/current/app/View/Layouts/default.ctp, line 40]
+2016-12-22 07:28:16 Error: [FatalErrorException] syntax error, unexpected 'echo' (T_ECHO)
+Request URL: /posts
+Stack Trace:
+#0 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/applic...', 40)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/applic...', 40, Array)
+#2 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/applic...', 40, Array)
+#3 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-12-22 07:28:27 Error: [MissingTableException] Table posts for model Post was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'posts',
+  'class' => 'Post',
+  'ds' => 'default',
+)
+Request URL: /posts
+Stack Trace:
+#0 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Model/Model.php(3572): Model->setSource('posts')
+#1 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Model/Model.php(2950): Model->getDataSource()
+#2 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Model/Model.php(2922): Model->_readDataSource('all', Array)
+#3 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Controller/Component/PaginatorComponent.php(196): Model->find('all', Array)
+#4 /var/www/application/current/app/Controller/PostsController.php(13): PaginatorComponent->paginate()
+#5 [internal function]: PostsController->index()
+#6 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(PostsController), Array)
+#7 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#8 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#9 /var/www/application/current/app/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2016-12-22 07:28:27 Error: Fatal Error (4): syntax error, unexpected 'echo' (T_ECHO) in [/var/www/application/current/app/View/Layouts/default.ctp, line 40]
+2016-12-22 07:28:27 Error: [FatalErrorException] syntax error, unexpected 'echo' (T_ECHO)
+Request URL: /posts
+Stack Trace:
+#0 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/applic...', 40)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/applic...', 40, Array)
+#2 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/applic...', 40, Array)
+#3 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-12-22 07:29:43 Error: [MissingTableException] Table posts for model Post was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'posts',
+  'class' => 'Post',
+  'ds' => 'default',
+)
+Stack Trace:
+#0 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Model/Model.php(3572): Model->setSource('posts')
+#1 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/TestSuite/Fixture/CakeTestFixture.php(144): Model->getDataSource()
+#2 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/TestSuite/Fixture/CakeTestFixture.php(120): CakeTestFixture->init()
+#3 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/TestSuite/Fixture/CakeFixtureManager.php(163): CakeTestFixture->__construct()
+#4 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/TestSuite/Fixture/CakeFixtureManager.php(77): CakeFixtureManager->_loadFixtures(Array)
+#5 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/TestSuite/CakeTestRunner.php(57): CakeFixtureManager->fixturize(Object(PostTest))
+#6 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/TestSuite/CakeTestSuiteCommand.php(98): CakeTestRunner->doRun(Object(PHPUnit_Framework_TestSuite), Array)
+#7 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/TestSuite/CakeTestSuiteDispatcher.php(259): CakeTestSuiteCommand->run(Array)
+#8 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/TestSuite/CakeTestSuiteDispatcher.php(96): CakeTestSuiteDispatcher->_runTestCase()
+#9 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/TestSuite/CakeTestSuiteDispatcher.php(113): CakeTestSuiteDispatcher->dispatch()
+#10 /var/www/application/current/app/webroot/test.php(89): CakeTestSuiteDispatcher::run()
+#11 {main}
+2016-12-22 07:29:44 Error: Fatal Error (1): Cannot access empty property in [/var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/View/View.php, line 860]
+2016-12-22 07:29:44 Error: [FatalErrorException] Cannot access empty property
+Stack Trace:
+#0 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Cannot access e...', '/var/www/applic...', 860)
+#1 [internal function]: ErrorHandler::handleError(1, 'Cannot access e...', '/var/www/applic...', 860, Array)
+#2 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Cannot access e...', '/var/www/applic...', 860, Array)
+#3 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-12-22 07:31:03 Error: [MissingTableException] Table posts for model Post was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'posts',
+  'class' => 'Post',
+  'ds' => 'default',
+)
+Stack Trace:
+#0 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Model/Model.php(3572): Model->setSource('posts')
+#1 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/TestSuite/Fixture/CakeTestFixture.php(144): Model->getDataSource()
+#2 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/TestSuite/Fixture/CakeTestFixture.php(120): CakeTestFixture->init()
+#3 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/TestSuite/Fixture/CakeFixtureManager.php(163): CakeTestFixture->__construct()
+#4 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/TestSuite/Fixture/CakeFixtureManager.php(77): CakeFixtureManager->_loadFixtures(Array)
+#5 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/TestSuite/CakeTestRunner.php(57): CakeFixtureManager->fixturize(Object(PostTest))
+#6 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/TestSuite/CakeTestSuiteCommand.php(98): CakeTestRunner->doRun(Object(PHPUnit_Framework_TestSuite), Array)
+#7 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/TestSuite/CakeTestSuiteDispatcher.php(259): CakeTestSuiteCommand->run(Array)
+#8 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/TestSuite/CakeTestSuiteDispatcher.php(96): CakeTestSuiteDispatcher->_runTestCase()
+#9 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/TestSuite/CakeTestSuiteDispatcher.php(113): CakeTestSuiteDispatcher->dispatch()
+#10 /var/www/application/current/app/webroot/test.php(89): CakeTestSuiteDispatcher::run()
+#11 {main}
+2016-12-22 07:35:06 Error: [MissingTableException] Table posts for model Post was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'posts',
+  'class' => 'Post',
+  'ds' => 'default',
+)
+Stack Trace:
+#0 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Model/Model.php(3572): Model->setSource('posts')
+#1 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/TestSuite/Fixture/CakeTestFixture.php(144): Model->getDataSource()
+#2 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/TestSuite/Fixture/CakeTestFixture.php(120): CakeTestFixture->init()
+#3 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/TestSuite/Fixture/CakeFixtureManager.php(163): CakeTestFixture->__construct()
+#4 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/TestSuite/Fixture/CakeFixtureManager.php(77): CakeFixtureManager->_loadFixtures(Array)
+#5 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/TestSuite/CakeTestRunner.php(57): CakeFixtureManager->fixturize(Object(PostTest))
+#6 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/TestSuite/CakeTestSuiteCommand.php(98): CakeTestRunner->doRun(Object(PHPUnit_Framework_TestSuite), Array)
+#7 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/TestSuite/CakeTestSuiteDispatcher.php(259): CakeTestSuiteCommand->run(Array)
+#8 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/TestSuite/CakeTestSuiteDispatcher.php(96): CakeTestSuiteDispatcher->_runTestCase()
+#9 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/TestSuite/CakeTestSuiteDispatcher.php(113): CakeTestSuiteDispatcher->dispatch()
+#10 /var/www/application/current/app/webroot/test.php(89): CakeTestSuiteDispatcher::run()
+#11 {main}
+2016-12-22 07:36:15 Error: [MissingTableException] Table posts for model Post was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'posts',
+  'class' => 'Post',
+  'ds' => 'default',
+)
+Stack Trace:
+#0 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Model/Model.php(3572): Model->setSource('posts')
+#1 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/TestSuite/Fixture/CakeTestFixture.php(144): Model->getDataSource()
+#2 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/TestSuite/Fixture/CakeTestFixture.php(120): CakeTestFixture->init()
+#3 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/TestSuite/Fixture/CakeFixtureManager.php(163): CakeTestFixture->__construct()
+#4 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/TestSuite/Fixture/CakeFixtureManager.php(77): CakeFixtureManager->_loadFixtures(Array)
+#5 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/TestSuite/CakeTestRunner.php(57): CakeFixtureManager->fixturize(Object(PostsControllerTest))
+#6 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/TestSuite/CakeTestSuiteCommand.php(98): CakeTestRunner->doRun(Object(CakeTestSuite), Array)
+#7 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/TestSuite/CakeTestSuiteDispatcher.php(259): CakeTestSuiteCommand->run(Array)
+#8 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/TestSuite/CakeTestSuiteDispatcher.php(96): CakeTestSuiteDispatcher->_runTestCase()
+#9 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/TestSuite/CakeTestSuiteDispatcher.php(113): CakeTestSuiteDispatcher->dispatch()
+#10 /var/www/application/current/app/webroot/test.php(89): CakeTestSuiteDispatcher::run()
+#11 {main}
+2016-12-22 07:36:46 Error: [MissingTableException] Table posts for model Post was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'posts',
+  'class' => 'Post',
+  'ds' => 'default',
+)
+Request URL: /posts
+Stack Trace:
+#0 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Model/Model.php(3572): Model->setSource('posts')
+#1 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Model/Model.php(2950): Model->getDataSource()
+#2 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Model/Model.php(2922): Model->_readDataSource('all', Array)
+#3 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Controller/Component/PaginatorComponent.php(196): Model->find('all', Array)
+#4 /var/www/application/current/app/Controller/PostsController.php(13): PaginatorComponent->paginate()
+#5 [internal function]: PostsController->index()
+#6 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(PostsController), Array)
+#7 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#8 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#9 /var/www/application/current/app/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2016-12-22 07:36:53 Error: [MissingTableException] Table posts for model Post was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'posts',
+  'class' => 'Post',
+  'ds' => 'default',
+)
+Request URL: /posts
+Stack Trace:
+#0 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Model/Model.php(3572): Model->setSource('posts')
+#1 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Model/Model.php(2950): Model->getDataSource()
+#2 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Model/Model.php(2922): Model->_readDataSource('all', Array)
+#3 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Controller/Component/PaginatorComponent.php(196): Model->find('all', Array)
+#4 /var/www/application/current/app/Controller/PostsController.php(13): PaginatorComponent->paginate()
+#5 [internal function]: PostsController->index()
+#6 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(PostsController), Array)
+#7 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#8 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#9 /var/www/application/current/app/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2016-12-22 07:37:47 Error: [MissingActionException] Action PostsController::edit() could not be found.
+Exception Attributes: array (
+  'controller' => 'PostsController',
+  'action' => 'edit',
+)
+Request URL: /posts/edit/1
+Stack Trace:
+#0 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#2 /var/www/application/current/app/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
