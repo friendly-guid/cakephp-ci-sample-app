@@ -237,3 +237,98 @@ Stack Trace:
 #1 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
 #2 /var/www/application/current/app/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #3 {main}
+2016-12-22 07:52:33 Error: [MissingTableException] Table posts for model Post was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'posts',
+  'class' => 'Post',
+  'ds' => 'default',
+)
+Stack Trace:
+#0 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Model/Model.php(3572): Model->setSource('posts')
+#1 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/TestSuite/Fixture/CakeTestFixture.php(144): Model->getDataSource()
+#2 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/TestSuite/Fixture/CakeTestFixture.php(120): CakeTestFixture->init()
+#3 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/TestSuite/Fixture/CakeFixtureManager.php(163): CakeTestFixture->__construct()
+#4 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/TestSuite/Fixture/CakeFixtureManager.php(77): CakeFixtureManager->_loadFixtures(Array)
+#5 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/TestSuite/CakeTestRunner.php(57): CakeFixtureManager->fixturize(Object(PostsControllerTest))
+#6 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/TestSuite/CakeTestSuiteCommand.php(98): CakeTestRunner->doRun(Object(CakeTestSuite), Array)
+#7 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/TestSuite/CakeTestSuiteDispatcher.php(259): CakeTestSuiteCommand->run(Array)
+#8 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/TestSuite/CakeTestSuiteDispatcher.php(96): CakeTestSuiteDispatcher->_runTestCase()
+#9 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/TestSuite/CakeTestSuiteDispatcher.php(113): CakeTestSuiteDispatcher->dispatch()
+#10 /var/www/application/current/app/webroot/test.php(89): CakeTestSuiteDispatcher::run()
+#11 {main}
+2016-12-22 07:52:37 Error: [MissingTableException] Table posts for model Post was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'posts',
+  'class' => 'Post',
+  'ds' => 'default',
+)
+Stack Trace:
+#0 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Model/Model.php(3572): Model->setSource('posts')
+#1 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/TestSuite/Fixture/CakeTestFixture.php(144): Model->getDataSource()
+#2 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/TestSuite/Fixture/CakeTestFixture.php(120): CakeTestFixture->init()
+#3 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/TestSuite/Fixture/CakeFixtureManager.php(163): CakeTestFixture->__construct()
+#4 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/TestSuite/Fixture/CakeFixtureManager.php(77): CakeFixtureManager->_loadFixtures(Array)
+#5 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/TestSuite/CakeTestRunner.php(57): CakeFixtureManager->fixturize(Object(PostsControllerTest))
+#6 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/TestSuite/CakeTestSuiteCommand.php(98): CakeTestRunner->doRun(Object(CakeTestSuite), Array)
+#7 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/TestSuite/CakeTestSuiteDispatcher.php(259): CakeTestSuiteCommand->run(Array)
+#8 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/TestSuite/CakeTestSuiteDispatcher.php(96): CakeTestSuiteDispatcher->_runTestCase()
+#9 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/TestSuite/CakeTestSuiteDispatcher.php(113): CakeTestSuiteDispatcher->dispatch()
+#10 /var/www/application/current/app/webroot/test.php(89): CakeTestSuiteDispatcher::run()
+#11 {main}
+2016-12-22 07:53:04 Error: [MissingTableException] Table posts for model Post was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'posts',
+  'class' => 'Post',
+  'ds' => 'default',
+)
+Stack Trace:
+#0 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Model/Model.php(3572): Model->setSource('posts')
+#1 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/TestSuite/Fixture/CakeTestFixture.php(144): Model->getDataSource()
+#2 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/TestSuite/Fixture/CakeTestFixture.php(120): CakeTestFixture->init()
+#3 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/TestSuite/Fixture/CakeFixtureManager.php(163): CakeTestFixture->__construct()
+#4 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/TestSuite/Fixture/CakeFixtureManager.php(77): CakeFixtureManager->_loadFixtures(Array)
+#5 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/TestSuite/CakeTestRunner.php(57): CakeFixtureManager->fixturize(Object(PostsControllerTest))
+#6 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/TestSuite/CakeTestSuiteCommand.php(98): CakeTestRunner->doRun(Object(CakeTestSuite), Array)
+#7 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/TestSuite/CakeTestSuiteDispatcher.php(259): CakeTestSuiteCommand->run(Array)
+#8 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/TestSuite/CakeTestSuiteDispatcher.php(96): CakeTestSuiteDispatcher->_runTestCase()
+#9 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/TestSuite/CakeTestSuiteDispatcher.php(113): CakeTestSuiteDispatcher->dispatch()
+#10 /var/www/application/current/app/webroot/test.php(89): CakeTestSuiteDispatcher::run()
+#11 {main}
+2016-12-22 08:10:59 Error: [MissingTableException] Table posts for model Post was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'posts',
+  'class' => 'Post',
+  'ds' => 'default',
+)
+Stack Trace:
+#0 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Model/Model.php(3572): Model->setSource('posts')
+#1 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/TestSuite/Fixture/CakeTestFixture.php(144): Model->getDataSource()
+#2 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/TestSuite/Fixture/CakeTestFixture.php(120): CakeTestFixture->init()
+#3 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/TestSuite/Fixture/CakeFixtureManager.php(163): CakeTestFixture->__construct()
+#4 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/TestSuite/Fixture/CakeFixtureManager.php(77): CakeFixtureManager->_loadFixtures(Array)
+#5 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/TestSuite/CakeTestRunner.php(57): CakeFixtureManager->fixturize(Object(PostsControllerTest))
+#6 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/TestSuite/CakeTestSuiteCommand.php(98): CakeTestRunner->doRun(Object(CakeTestSuite), Array)
+#7 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/TestSuite/CakeTestSuiteDispatcher.php(259): CakeTestSuiteCommand->run(Array)
+#8 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/TestSuite/CakeTestSuiteDispatcher.php(96): CakeTestSuiteDispatcher->_runTestCase()
+#9 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/TestSuite/CakeTestSuiteDispatcher.php(113): CakeTestSuiteDispatcher->dispatch()
+#10 /var/www/application/current/app/webroot/test.php(89): CakeTestSuiteDispatcher::run()
+#11 {main}
+2016-12-22 08:11:02 Error: [MissingTableException] Table posts for model Post was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'posts',
+  'class' => 'Post',
+  'ds' => 'default',
+)
+Stack Trace:
+#0 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Model/Model.php(3572): Model->setSource('posts')
+#1 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/TestSuite/Fixture/CakeTestFixture.php(144): Model->getDataSource()
+#2 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/TestSuite/Fixture/CakeTestFixture.php(120): CakeTestFixture->init()
+#3 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/TestSuite/Fixture/CakeFixtureManager.php(163): CakeTestFixture->__construct()
+#4 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/TestSuite/Fixture/CakeFixtureManager.php(77): CakeFixtureManager->_loadFixtures(Array)
+#5 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/TestSuite/CakeTestRunner.php(57): CakeFixtureManager->fixturize(Object(PostsControllerTest))
+#6 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/TestSuite/CakeTestSuiteCommand.php(98): CakeTestRunner->doRun(Object(CakeTestSuite), Array)
+#7 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/TestSuite/CakeTestSuiteDispatcher.php(259): CakeTestSuiteCommand->run(Array)
+#8 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/TestSuite/CakeTestSuiteDispatcher.php(96): CakeTestSuiteDispatcher->_runTestCase()
+#9 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/TestSuite/CakeTestSuiteDispatcher.php(113): CakeTestSuiteDispatcher->dispatch()
+#10 /var/www/application/current/app/webroot/test.php(89): CakeTestSuiteDispatcher::run()
+#11 {main}
