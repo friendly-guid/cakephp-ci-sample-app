@@ -2909,3 +2909,23 @@ Stack Trace:
 #9 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
 #10 /var/www/application/current/app/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #11 {main}
+2016-12-30 06:23:00 Error: [MissingTableException] Table posts for model Post was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'posts',
+  'class' => 'Post',
+  'ds' => 'default',
+)
+Request URL: /posts/
+Stack Trace:
+#0 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Model/Model.php(3572): Model->setSource('posts')
+#1 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Model/Model.php(1368): Model->getDataSource()
+#2 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Model/Model.php(1460): Model->schema()
+#3 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Controller/Component/PaginatorComponent.php(398): Model->hasField('id')
+#4 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Controller/Component/PaginatorComponent.php(142): PaginatorComponent->validateSort(Object(Post), Array, Array)
+#5 /var/www/application/current/app/Controller/PostsController.php(17): PaginatorComponent->paginate()
+#6 [internal function]: PostsController->index()
+#7 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(PostsController), Array)
+#8 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#9 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#10 /var/www/application/current/app/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
