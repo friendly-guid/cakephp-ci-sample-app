@@ -1,0 +1,128 @@
+# Logfile created on 2017-01-04 05:22:50 +0000 by logger.rb/v1.2.7
+  INFO ---------------------------------------------------------------------------
+  INFO START 2017-01-04 05:22:50 +0000 cap production deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [485d1663] Running /usr/bin/env mkdir -p /tmp as vagrant@192.168.33.200
+  INFO [485d1663] Finished in 0.171 seconds with exit status 0 (successful).
+  INFO Uploading /tmp/git-ssh-blogapp-production-vagrant.sh 100.0%
+  INFO [28f72f38] Running /usr/bin/env chmod 700 /tmp/git-ssh-blogapp-production-vagrant.sh as vagrant@192.168.33.200
+  INFO [28f72f38] Finished in 0.237 seconds with exit status 0 (successful).
+  INFO [917a424f] Running /usr/bin/env git ls-remote --heads git@github.com:friendly-guid/cakephp-ci-sample-app.git as vagrant@192.168.33.200
+  INFO ---------------------------------------------------------------------------
+  INFO START 2017-01-04 05:28:01 +0000 cap production deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [10218fe0] Running /usr/bin/env mkdir -p /tmp as vagrant@192.168.33.200
+  INFO [10218fe0] Finished in 0.169 seconds with exit status 0 (successful).
+  INFO Uploading /tmp/git-ssh-blogapp-production-vagrant.sh 100.0%
+  INFO [8df04d53] Running /usr/bin/env chmod 700 /tmp/git-ssh-blogapp-production-vagrant.sh as vagrant@192.168.33.200
+  INFO [8df04d53] Finished in 0.003 seconds with exit status 0 (successful).
+  INFO [15ec485c] Running /usr/bin/env git ls-remote --heads git@github.com:friendly-guid/cakephp-ci-sample-app.git as vagrant@192.168.33.200
+  INFO ---------------------------------------------------------------------------
+  INFO START 2017-01-04 05:31:30 +0000 cap production deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [bf59e9de] Running /usr/bin/env mkdir -p /tmp as vagrant@192.168.33.200
+  INFO [bf59e9de] Finished in 15.161 seconds with exit status 0 (successful).
+  INFO Uploading /tmp/git-ssh-blogapp-production-vagrant.sh 100.0%
+  INFO [e26b897a] Running /usr/bin/env chmod 700 /tmp/git-ssh-blogapp-production-vagrant.sh as vagrant@192.168.33.200
+  INFO [e26b897a] Finished in 0.004 seconds with exit status 0 (successful).
+  INFO [7804071f] Running /usr/bin/env git ls-remote --heads git@github.com:friendly-guid/cakephp-ci-sample-app.git as vagrant@192.168.33.200
+  INFO ---------------------------------------------------------------------------
+  INFO START 2017-01-04 05:32:05 +0000 cap production deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [65381b3d] Running /usr/bin/env mkdir -p /tmp as vagrant@192.168.33.200
+  INFO [65381b3d] Finished in 0.136 seconds with exit status 0 (successful).
+  INFO Uploading /tmp/git-ssh-blogapp-production-vagrant.sh 100.0%
+  INFO [9a925b4e] Running /usr/bin/env chmod 700 /tmp/git-ssh-blogapp-production-vagrant.sh as vagrant@192.168.33.200
+  INFO [9a925b4e] Finished in 0.004 seconds with exit status 0 (successful).
+  INFO [634bb56c] Running /usr/bin/env git ls-remote --heads git@github.com:friendly-guid/cakephp-ci-sample-app.git as vagrant@192.168.33.200
+  INFO ---------------------------------------------------------------------------
+  INFO START 2017-01-04 05:36:42 +0000 cap production deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [88979599] Running /usr/bin/env mkdir -p /tmp as vagrant@192.168.33.200
+  INFO [88979599] Finished in 0.137 seconds with exit status 0 (successful).
+  INFO Uploading /tmp/git-ssh-blogapp-production-vagrant.sh 100.0%
+  INFO [e1edee9e] Running /usr/bin/env chmod 700 /tmp/git-ssh-blogapp-production-vagrant.sh as vagrant@192.168.33.200
+  INFO [e1edee9e] Finished in 0.003 seconds with exit status 0 (successful).
+  INFO [234065a5] Running /usr/bin/env git ls-remote --heads git@github.com:friendly-guid/cakephp-ci-sample-app.git as vagrant@192.168.33.200
+  INFO ---------------------------------------------------------------------------
+  INFO START 2017-01-04 05:37:16 +0000 cap production deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [ddc0b682] Running /usr/bin/env mkdir -p /tmp as vagrant@192.168.33.200
+  INFO [ddc0b682] Finished in 0.160 seconds with exit status 0 (successful).
+  INFO Uploading /tmp/git-ssh-blogapp-production-vagrant.sh 100.0%
+  INFO [7cc03185] Running /usr/bin/env chmod 700 /tmp/git-ssh-blogapp-production-vagrant.sh as vagrant@192.168.33.200
+  INFO [7cc03185] Finished in 0.006 seconds with exit status 0 (successful).
+  INFO [7c0eb6fa] Running /usr/bin/env git ls-remote --heads git@github.com:friendly-guid/cakephp-ci-sample-app.git as vagrant@192.168.33.200
+  INFO [7c0eb6fa] Finished in 3.391 seconds with exit status 0 (successful).
+  INFO [946731ac] Running /usr/bin/env sudo mkdir -p /var/www/application as vagrant@192.168.33.200
+  INFO [946731ac] Finished in 0.008 seconds with exit status 0 (successful).
+  INFO [fa1a26cf] Running /usr/bin/env sudo chown vagrant:vagrant /var/www/application as vagrant@192.168.33.200
+  INFO [fa1a26cf] Finished in 0.008 seconds with exit status 0 (successful).
+  INFO [952aa477] Running /usr/bin/env mkdir -p /var/www/application/shared /var/www/application/releases as vagrant@192.168.33.200
+  INFO [952aa477] Finished in 0.004 seconds with exit status 0 (successful).
+  INFO [a1a10968] Running /usr/bin/env mkdir -p /var/www/application/shared/tmp/cache /var/www/application/shared/tmp/cache/models /var/www/application/shared/tmp/cache/persistent /var/www/application/shared/tmp/cache/views /var/www/application/shared/tmp/logs /var/www/application/shared/tmp/sessions /var/www/application/shared/tmp/tests as vagrant@192.168.33.200
+  INFO [a1a10968] Finished in 0.004 seconds with exit status 0 (successful).
+  INFO [597d6d27] Running /usr/bin/env sudo find /var/www/application/shared -type d -print | xargs chmod 777 as vagrant@192.168.33.200
+  INFO [597d6d27] Finished in 0.016 seconds with exit status 0 (successful).
+  INFO [5de463d1] Running /usr/bin/env mkdir -p /var/www/application/shared as vagrant@192.168.33.200
+  INFO [5de463d1] Finished in 0.004 seconds with exit status 0 (successful).
+  INFO Uploading ./config/deploy/production.php 100.0%
+  INFO [75c44259] Running /usr/bin/env git clone --mirror git@github.com:friendly-guid/cakephp-ci-sample-app.git /var/www/application/repo as vagrant@192.168.33.200
+  INFO [75c44259] Finished in 3.519 seconds with exit status 0 (successful).
+  INFO [e0620c57] Running /usr/bin/env git remote update --prune as vagrant@192.168.33.200
+  INFO [e0620c57] Finished in 2.575 seconds with exit status 0 (successful).
+  INFO [3b6640d7] Running /usr/bin/env mkdir -p /var/www/application/releases/20170104053719 as vagrant@192.168.33.200
+  INFO [3b6640d7] Finished in 0.004 seconds with exit status 0 (successful).
+  INFO [c9a89f16] Running /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /var/www/application/releases/20170104053719 as vagrant@192.168.33.200
+  INFO [c9a89f16] Finished in 0.030 seconds with exit status 0 (successful).
+  INFO [8195827e] Running /usr/bin/env echo "324ecf49939da181bb5e51d0dd3b2302bcb20a25" >> REVISION as vagrant@192.168.33.200
+  INFO [8195827e] Finished in 0.006 seconds with exit status 0 (successful).
+  INFO [940f848d] Running /usr/bin/env ln -s /var/www/application/shared/production.php /var/www/application/releases/20170104053719/app/Config/bootstrap/environments/production.php as vagrant@192.168.33.200
+  INFO [940f848d] Finished in 0.009 seconds with exit status 0 (successful).
+  INFO [d8ae8904] Running /usr/bin/env sudo rm -rf /var/www/application/releases/20170104053719/app/tmp as vagrant@192.168.33.200
+  INFO [d8ae8904] Finished in 0.014 seconds with exit status 0 (successful).
+  INFO [f56bdf7b] Running /usr/bin/env ln -s /var/www/application/shared/tmp /var/www/application/releases/20170104053719/app/tmp as vagrant@192.168.33.200
+  INFO [f56bdf7b] Finished in 0.025 seconds with exit status 0 (successful).
+  INFO [a346fbe3] Running /usr/bin/env composer --working-dir=/var/www/application/releases/20170104053719/app --no-dev install as vagrant@192.168.33.200
+  INFO ---------------------------------------------------------------------------
+  INFO START 2017-01-04 06:03:35 +0000 cap production deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [c4286af1] Running /usr/bin/env mkdir -p /tmp as vagrant@192.168.33.200
+  INFO [c4286af1] Finished in 15.166 seconds with exit status 0 (successful).
+  INFO Uploading /tmp/git-ssh-blogapp-production-vagrant.sh 100.0%
+  INFO [19527c00] Running /usr/bin/env chmod 700 /tmp/git-ssh-blogapp-production-vagrant.sh as vagrant@192.168.33.200
+  INFO [19527c00] Finished in 0.004 seconds with exit status 0 (successful).
+  INFO [1007f5cb] Running /usr/bin/env git ls-remote --heads git@github.com:friendly-guid/cakephp-ci-sample-app.git as vagrant@192.168.33.200
+  INFO [1007f5cb] Finished in 3.880 seconds with exit status 0 (successful).
+  INFO [5ac08c30] Running /usr/bin/env sudo mkdir -p /var/www/application as vagrant@192.168.33.200
+  INFO [5ac08c30] Finished in 0.015 seconds with exit status 0 (successful).
+  INFO [0779fc92] Running /usr/bin/env sudo chown vagrant:vagrant /var/www/application as vagrant@192.168.33.200
+  INFO [0779fc92] Finished in 0.009 seconds with exit status 0 (successful).
+  INFO [c068c226] Running /usr/bin/env mkdir -p /var/www/application/shared /var/www/application/releases as vagrant@192.168.33.200
+  INFO [c068c226] Finished in 0.004 seconds with exit status 0 (successful).
+  INFO [5a7d021a] Running /usr/bin/env mkdir -p /var/www/application/shared/tmp/cache /var/www/application/shared/tmp/cache/models /var/www/application/shared/tmp/cache/persistent /var/www/application/shared/tmp/cache/views /var/www/application/shared/tmp/logs /var/www/application/shared/tmp/sessions /var/www/application/shared/tmp/tests as vagrant@192.168.33.200
+  INFO [5a7d021a] Finished in 0.007 seconds with exit status 0 (successful).
+  INFO [15160f29] Running /usr/bin/env sudo find /var/www/application/shared -type d -print | xargs chmod 777 as vagrant@192.168.33.200
+  INFO [15160f29] Finished in 0.019 seconds with exit status 0 (successful).
+  INFO [61eb54a3] Running /usr/bin/env mkdir -p /var/www/application/shared as vagrant@192.168.33.200
+  INFO [61eb54a3] Finished in 0.005 seconds with exit status 0 (successful).
+  INFO Uploading ./config/deploy/production.php 100.0%
+  INFO [a7e94645] Running /usr/bin/env git clone --mirror git@github.com:friendly-guid/cakephp-ci-sample-app.git /var/www/application/repo as vagrant@192.168.33.200
+  INFO [a7e94645] Finished in 3.706 seconds with exit status 0 (successful).
+  INFO [2ebf132e] Running /usr/bin/env git remote update --prune as vagrant@192.168.33.200
+  INFO [2ebf132e] Finished in 3.492 seconds with exit status 0 (successful).
+  INFO [72f6325a] Running /usr/bin/env mkdir -p /var/www/application/releases/20170104060355 as vagrant@192.168.33.200
+  INFO [72f6325a] Finished in 0.009 seconds with exit status 0 (successful).
+  INFO [bf3cce3b] Running /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /var/www/application/releases/20170104060355 as vagrant@192.168.33.200
+  INFO [bf3cce3b] Finished in 0.067 seconds with exit status 0 (successful).
+  INFO [3380181e] Running /usr/bin/env echo "324ecf49939da181bb5e51d0dd3b2302bcb20a25" >> REVISION as vagrant@192.168.33.200
+  INFO [3380181e] Finished in 0.008 seconds with exit status 0 (successful).
+  INFO [b58c6474] Running /usr/bin/env ln -s /var/www/application/shared/production.php /var/www/application/releases/20170104060355/app/Config/bootstrap/environments/production.php as vagrant@192.168.33.200
+  INFO [b58c6474] Finished in 0.014 seconds with exit status 0 (successful).
+  INFO [5e407bc6] Running /usr/bin/env sudo rm -rf /var/www/application/releases/20170104060355/app/tmp as vagrant@192.168.33.200
+  INFO [5e407bc6] Finished in 0.016 seconds with exit status 0 (successful).
+  INFO [e862618c] Running /usr/bin/env ln -s /var/www/application/shared/tmp /var/www/application/releases/20170104060355/app/tmp as vagrant@192.168.33.200
+  INFO [e862618c] Finished in 0.022 seconds with exit status 0 (successful).
+  INFO [bbb3c800] Running /usr/bin/env composer --working-dir=/var/www/application/releases/20170104060355/app --no-dev install as vagrant@192.168.33.200
+  INFO [bbb3c800] Finished in 37.313 seconds with exit status 0 (successful).
+  INFO [08c0736f] Running env CAKE_ENV=production /var/www/application/releases/20170104060355/app/Console/cake Migrations.migration run all -p as vagrant@192.168.33.200
