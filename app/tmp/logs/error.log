@@ -4751,3 +4751,25 @@ Stack Trace:
 #11 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(AppUsersController), Object(CakeRequest))
 #12 /var/www/application/current/app/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #13 {main}
+2017-01-04 14:59:58 Error: [MissingTableException] Table users for model User was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'users',
+  'class' => 'User',
+  'ds' => 'default',
+)
+Request URL: /users/login
+Stack Trace:
+#0 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Model/Model.php(3572): Model->setSource('users')
+#1 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Model/Model.php(1368): Model->getDataSource()
+#2 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/View/Helper/FormHelper.php(215): Model->schema()
+#3 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/View/Helper/FormHelper.php(468): FormHelper->_introspectModel('User', 'fields')
+#4 /var/www/application/current/app/View/AppUsers/login.ctp(9): FormHelper->create('Users.User', Array)
+#5 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/View/View.php(954): include('/var/www/applic...')
+#6 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/View/View.php(916): View->_evaluate('/var/www/applic...', Array)
+#7 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/View/View.php(473): View->_render('/var/www/applic...')
+#8 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Controller/Controller.php(959): View->render('login', NULL)
+#9 /var/www/application/current/app/Controller/AppUsersController.php(20): Controller->render('login', NULL)
+#10 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Routing/Dispatcher.php(200): AppUsersController->render()
+#11 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(AppUsersController), Object(CakeRequest))
+#12 /var/www/application/current/app/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
