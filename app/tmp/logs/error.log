@@ -3235,3 +3235,1519 @@ Stack Trace:
 #10 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
 #11 /var/www/application/current/app/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #12 {main}
+2017-01-04 11:54:21 Error: [ConfigureException] /var/www/application/current/app/Config/email.php not found.
+Request URL: /users/users/login
+Stack Trace:
+#0 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Network/Email/CakeEmail.php(1136): CakeEmail->_applyConfig('default')
+#1 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Network/Email/CakeEmail.php(355): CakeEmail->config('default')
+#2 /var/www/application/current/app/Plugin/Users/Model/User.php(929): CakeEmail->__construct('default')
+#3 /var/www/application/current/app/Plugin/Users/Controller/UsersController.php(864): User->getMailInstance()
+#4 /var/www/application/current/app/Plugin/Users/Controller/UsersController.php(169): UsersController->_getMailInstance()
+#5 /var/www/application/current/app/Plugin/Users/Controller/UsersController.php(159): UsersController->_setDefaultEmail()
+#6 [internal function]: UsersController->beforeFilter(Object(CakeEvent))
+#7 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Event/CakeEventManager.php(243): call_user_func(Array, Object(CakeEvent))
+#8 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Controller/Controller.php(676): CakeEventManager->dispatch(Object(CakeEvent))
+#9 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Routing/Dispatcher.php(189): Controller->startupProcess()
+#10 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#11 /var/www/application/current/app/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2017-01-04 12:11:11 Error: [MissingTableException] Table users for model User was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'users',
+  'class' => 'User',
+  'ds' => 'default',
+)
+Request URL: /users/login
+Stack Trace:
+#0 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Model/Model.php(3572): Model->setSource('users')
+#1 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Model/Model.php(808): Model->getDataSource()
+#2 /var/www/application/current/app/Plugin/Users/Controller/UsersController.php(864): Model->__call('getMailInstance', Array)
+#3 /var/www/application/current/app/Plugin/Users/Controller/UsersController.php(864): AppModel->getMailInstance()
+#4 /var/www/application/current/app/Plugin/Users/Controller/UsersController.php(169): UsersController->_getMailInstance()
+#5 /var/www/application/current/app/Plugin/Users/Controller/UsersController.php(159): UsersController->_setDefaultEmail()
+#6 /var/www/application/current/app/Controller/AppUsersController.php(5): UsersController->beforeFilter()
+#7 [internal function]: AppUsersController->beforeFilter(Object(CakeEvent))
+#8 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Event/CakeEventManager.php(243): call_user_func(Array, Object(CakeEvent))
+#9 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Controller/Controller.php(676): CakeEventManager->dispatch(Object(CakeEvent))
+#10 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Routing/Dispatcher.php(189): Controller->startupProcess()
+#11 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(AppUsersController), Object(CakeRequest))
+#12 /var/www/application/current/app/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2017-01-04 12:11:11 Error: [MissingTableException] Table users for model User was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'users',
+  'class' => 'User',
+  'ds' => 'default',
+)
+Request URL: /users/login
+Stack Trace:
+#0 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Model/Model.php(3572): Model->setSource('users')
+#1 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Model/Model.php(808): Model->getDataSource()
+#2 /var/www/application/current/app/Plugin/Users/Controller/UsersController.php(864): Model->__call('getMailInstance', Array)
+#3 /var/www/application/current/app/Plugin/Users/Controller/UsersController.php(864): AppModel->getMailInstance()
+#4 /var/www/application/current/app/Plugin/Users/Controller/UsersController.php(169): UsersController->_getMailInstance()
+#5 /var/www/application/current/app/Plugin/Users/Controller/UsersController.php(159): UsersController->_setDefaultEmail()
+#6 /var/www/application/current/app/Controller/AppUsersController.php(5): UsersController->beforeFilter()
+#7 [internal function]: AppUsersController->beforeFilter(Object(CakeEvent))
+#8 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Event/CakeEventManager.php(243): call_user_func(Array, Object(CakeEvent))
+#9 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Controller/Controller.php(676): CakeEventManager->dispatch(Object(CakeEvent))
+#10 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Routing/Dispatcher.php(189): Controller->startupProcess()
+#11 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(AppUsersController), Object(CakeRequest))
+#12 /var/www/application/current/app/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2017-01-04 12:11:11 Error: [MissingTableException] Table users for model User was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'users',
+  'class' => 'User',
+  'ds' => 'default',
+)
+Request URL: /users/login
+Stack Trace:
+#0 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Model/Model.php(3572): Model->setSource('users')
+#1 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Model/Model.php(808): Model->getDataSource()
+#2 /var/www/application/current/app/Plugin/Users/Controller/UsersController.php(864): Model->__call('getMailInstance', Array)
+#3 /var/www/application/current/app/Plugin/Users/Controller/UsersController.php(864): AppModel->getMailInstance()
+#4 /var/www/application/current/app/Plugin/Users/Controller/UsersController.php(169): UsersController->_getMailInstance()
+#5 /var/www/application/current/app/Plugin/Users/Controller/UsersController.php(159): UsersController->_setDefaultEmail()
+#6 /var/www/application/current/app/Controller/AppUsersController.php(5): UsersController->beforeFilter()
+#7 [internal function]: AppUsersController->beforeFilter(Object(CakeEvent))
+#8 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Event/CakeEventManager.php(243): call_user_func(Array, Object(CakeEvent))
+#9 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Controller/Controller.php(676): CakeEventManager->dispatch(Object(CakeEvent))
+#10 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Routing/Dispatcher.php(189): Controller->startupProcess()
+#11 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(AppUsersController), Object(CakeRequest))
+#12 /var/www/application/current/app/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2017-01-04 12:12:50 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'getMailInstance' at line 1
+Request URL: /users/login
+Stack Trace:
+#0 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Model/Datasource/DboSource.php(458): PDOStatement->execute(Array)
+#1 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Model/Datasource/DboSource.php(424): DboSource->_execute('getMailInstance', Array)
+#2 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Model/Datasource/DboSource.php(666): DboSource->execute('getMailInstance', Array, Array)
+#3 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Model/Datasource/DboSource.php(609): DboSource->fetchAll('getMailInstance', Array, Array)
+#4 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Model/Model.php(808): DboSource->query('getMailInstance', Array, Object(AppModel))
+#5 /var/www/application/current/app/Plugin/Users/Controller/UsersController.php(864): Model->__call('getMailInstance', Array)
+#6 /var/www/application/current/app/Plugin/Users/Controller/UsersController.php(864): AppModel->getMailInstance()
+#7 /var/www/application/current/app/Plugin/Users/Controller/UsersController.php(169): UsersController->_getMailInstance()
+#8 /var/www/application/current/app/Plugin/Users/Controller/UsersController.php(159): UsersController->_setDefaultEmail()
+#9 /var/www/application/current/app/Controller/AppUsersController.php(5): UsersController->beforeFilter()
+#10 [internal function]: AppUsersController->beforeFilter(Object(CakeEvent))
+#11 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Event/CakeEventManager.php(243): call_user_func(Array, Object(CakeEvent))
+#12 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Controller/Controller.php(676): CakeEventManager->dispatch(Object(CakeEvent))
+#13 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Routing/Dispatcher.php(189): Controller->startupProcess()
+#14 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(AppUsersController), Object(CakeRequest))
+#15 /var/www/application/current/app/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#16 {main}
+2017-01-04 12:48:24 Error: [MissingTableException] Table users for model User was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'users',
+  'class' => 'User',
+  'ds' => 'default',
+)
+Request URL: /users/login
+Stack Trace:
+#0 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Model/Model.php(3572): Model->setSource('users')
+#1 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Model/Model.php(808): Model->getDataSource()
+#2 /var/www/application/current/app/Plugin/Users/Controller/UsersController.php(864): Model->__call('getMailInstance', Array)
+#3 /var/www/application/current/app/Plugin/Users/Controller/UsersController.php(864): AppModel->getMailInstance()
+#4 /var/www/application/current/app/Plugin/Users/Controller/UsersController.php(169): UsersController->_getMailInstance()
+#5 /var/www/application/current/app/Plugin/Users/Controller/UsersController.php(159): UsersController->_setDefaultEmail()
+#6 /var/www/application/current/app/Controller/AppUsersController.php(5): UsersController->beforeFilter()
+#7 [internal function]: AppUsersController->beforeFilter(Object(CakeEvent))
+#8 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Event/CakeEventManager.php(243): call_user_func(Array, Object(CakeEvent))
+#9 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Controller/Controller.php(676): CakeEventManager->dispatch(Object(CakeEvent))
+#10 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Routing/Dispatcher.php(189): Controller->startupProcess()
+#11 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(AppUsersController), Object(CakeRequest))
+#12 /var/www/application/current/app/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2017-01-04 12:48:24 Error: [MissingTableException] Table users for model User was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'users',
+  'class' => 'User',
+  'ds' => 'default',
+)
+Request URL: /users/login
+Stack Trace:
+#0 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Model/Model.php(3572): Model->setSource('users')
+#1 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Model/Model.php(808): Model->getDataSource()
+#2 /var/www/application/current/app/Plugin/Users/Controller/UsersController.php(864): Model->__call('getMailInstance', Array)
+#3 /var/www/application/current/app/Plugin/Users/Controller/UsersController.php(864): AppModel->getMailInstance()
+#4 /var/www/application/current/app/Plugin/Users/Controller/UsersController.php(169): UsersController->_getMailInstance()
+#5 /var/www/application/current/app/Plugin/Users/Controller/UsersController.php(159): UsersController->_setDefaultEmail()
+#6 /var/www/application/current/app/Controller/AppUsersController.php(5): UsersController->beforeFilter()
+#7 [internal function]: AppUsersController->beforeFilter(Object(CakeEvent))
+#8 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Event/CakeEventManager.php(243): call_user_func(Array, Object(CakeEvent))
+#9 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Controller/Controller.php(676): CakeEventManager->dispatch(Object(CakeEvent))
+#10 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Routing/Dispatcher.php(189): Controller->startupProcess()
+#11 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(AppUsersController), Object(CakeRequest))
+#12 /var/www/application/current/app/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2017-01-04 12:48:24 Error: [MissingTableException] Table users for model User was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'users',
+  'class' => 'User',
+  'ds' => 'default',
+)
+Request URL: /users/login
+Stack Trace:
+#0 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Model/Model.php(3572): Model->setSource('users')
+#1 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Model/Model.php(808): Model->getDataSource()
+#2 /var/www/application/current/app/Plugin/Users/Controller/UsersController.php(864): Model->__call('getMailInstance', Array)
+#3 /var/www/application/current/app/Plugin/Users/Controller/UsersController.php(864): AppModel->getMailInstance()
+#4 /var/www/application/current/app/Plugin/Users/Controller/UsersController.php(169): UsersController->_getMailInstance()
+#5 /var/www/application/current/app/Plugin/Users/Controller/UsersController.php(159): UsersController->_setDefaultEmail()
+#6 /var/www/application/current/app/Controller/AppUsersController.php(5): UsersController->beforeFilter()
+#7 [internal function]: AppUsersController->beforeFilter(Object(CakeEvent))
+#8 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Event/CakeEventManager.php(243): call_user_func(Array, Object(CakeEvent))
+#9 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Controller/Controller.php(676): CakeEventManager->dispatch(Object(CakeEvent))
+#10 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Routing/Dispatcher.php(189): Controller->startupProcess()
+#11 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(AppUsersController), Object(CakeRequest))
+#12 /var/www/application/current/app/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2017-01-04 12:49:00 Error: [MissingTableException] Table users for model User was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'users',
+  'class' => 'User',
+  'ds' => 'default',
+)
+Request URL: /users/login
+Stack Trace:
+#0 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Model/Model.php(3572): Model->setSource('users')
+#1 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Model/Model.php(808): Model->getDataSource()
+#2 /var/www/application/current/app/Plugin/Users/Controller/UsersController.php(864): Model->__call('getMailInstance', Array)
+#3 /var/www/application/current/app/Plugin/Users/Controller/UsersController.php(864): AppModel->getMailInstance()
+#4 /var/www/application/current/app/Plugin/Users/Controller/UsersController.php(169): UsersController->_getMailInstance()
+#5 /var/www/application/current/app/Plugin/Users/Controller/UsersController.php(159): UsersController->_setDefaultEmail()
+#6 /var/www/application/current/app/Controller/AppUsersController.php(5): UsersController->beforeFilter()
+#7 [internal function]: AppUsersController->beforeFilter(Object(CakeEvent))
+#8 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Event/CakeEventManager.php(243): call_user_func(Array, Object(CakeEvent))
+#9 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Controller/Controller.php(676): CakeEventManager->dispatch(Object(CakeEvent))
+#10 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Routing/Dispatcher.php(189): Controller->startupProcess()
+#11 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(AppUsersController), Object(CakeRequest))
+#12 /var/www/application/current/app/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2017-01-04 12:49:00 Error: [MissingTableException] Table users for model User was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'users',
+  'class' => 'User',
+  'ds' => 'default',
+)
+Request URL: /users/login
+Stack Trace:
+#0 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Model/Model.php(3572): Model->setSource('users')
+#1 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Model/Model.php(808): Model->getDataSource()
+#2 /var/www/application/current/app/Plugin/Users/Controller/UsersController.php(864): Model->__call('getMailInstance', Array)
+#3 /var/www/application/current/app/Plugin/Users/Controller/UsersController.php(864): AppModel->getMailInstance()
+#4 /var/www/application/current/app/Plugin/Users/Controller/UsersController.php(169): UsersController->_getMailInstance()
+#5 /var/www/application/current/app/Plugin/Users/Controller/UsersController.php(159): UsersController->_setDefaultEmail()
+#6 /var/www/application/current/app/Controller/AppUsersController.php(5): UsersController->beforeFilter()
+#7 [internal function]: AppUsersController->beforeFilter(Object(CakeEvent))
+#8 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Event/CakeEventManager.php(243): call_user_func(Array, Object(CakeEvent))
+#9 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Controller/Controller.php(676): CakeEventManager->dispatch(Object(CakeEvent))
+#10 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Routing/Dispatcher.php(189): Controller->startupProcess()
+#11 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(AppUsersController), Object(CakeRequest))
+#12 /var/www/application/current/app/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2017-01-04 12:49:00 Error: [MissingTableException] Table users for model User was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'users',
+  'class' => 'User',
+  'ds' => 'default',
+)
+Request URL: /users/login
+Stack Trace:
+#0 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Model/Model.php(3572): Model->setSource('users')
+#1 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Model/Model.php(808): Model->getDataSource()
+#2 /var/www/application/current/app/Plugin/Users/Controller/UsersController.php(864): Model->__call('getMailInstance', Array)
+#3 /var/www/application/current/app/Plugin/Users/Controller/UsersController.php(864): AppModel->getMailInstance()
+#4 /var/www/application/current/app/Plugin/Users/Controller/UsersController.php(169): UsersController->_getMailInstance()
+#5 /var/www/application/current/app/Plugin/Users/Controller/UsersController.php(159): UsersController->_setDefaultEmail()
+#6 /var/www/application/current/app/Controller/AppUsersController.php(5): UsersController->beforeFilter()
+#7 [internal function]: AppUsersController->beforeFilter(Object(CakeEvent))
+#8 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Event/CakeEventManager.php(243): call_user_func(Array, Object(CakeEvent))
+#9 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Controller/Controller.php(676): CakeEventManager->dispatch(Object(CakeEvent))
+#10 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Routing/Dispatcher.php(189): Controller->startupProcess()
+#11 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(AppUsersController), Object(CakeRequest))
+#12 /var/www/application/current/app/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2017-01-04 13:08:04 Error: [MissingTableException] Table users for model User was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'users',
+  'class' => 'User',
+  'ds' => 'default',
+)
+Request URL: /users/login
+Stack Trace:
+#0 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Model/Model.php(3572): Model->setSource('users')
+#1 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Model/Model.php(808): Model->getDataSource()
+#2 /var/www/application/current/app/Plugin/Users/Controller/UsersController.php(864): Model->__call('getMailInstance', Array)
+#3 /var/www/application/current/app/Plugin/Users/Controller/UsersController.php(864): AppModel->getMailInstance()
+#4 /var/www/application/current/app/Plugin/Users/Controller/UsersController.php(169): UsersController->_getMailInstance()
+#5 /var/www/application/current/app/Plugin/Users/Controller/UsersController.php(159): UsersController->_setDefaultEmail()
+#6 /var/www/application/current/app/Controller/AppUsersController.php(5): UsersController->beforeFilter()
+#7 [internal function]: AppUsersController->beforeFilter(Object(CakeEvent))
+#8 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Event/CakeEventManager.php(243): call_user_func(Array, Object(CakeEvent))
+#9 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Controller/Controller.php(676): CakeEventManager->dispatch(Object(CakeEvent))
+#10 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Routing/Dispatcher.php(189): Controller->startupProcess()
+#11 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(AppUsersController), Object(CakeRequest))
+#12 /var/www/application/current/app/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2017-01-04 13:08:04 Error: [MissingTableException] Table users for model User was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'users',
+  'class' => 'User',
+  'ds' => 'default',
+)
+Request URL: /users/login
+Stack Trace:
+#0 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Model/Model.php(3572): Model->setSource('users')
+#1 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Model/Model.php(808): Model->getDataSource()
+#2 /var/www/application/current/app/Plugin/Users/Controller/UsersController.php(864): Model->__call('getMailInstance', Array)
+#3 /var/www/application/current/app/Plugin/Users/Controller/UsersController.php(864): AppModel->getMailInstance()
+#4 /var/www/application/current/app/Plugin/Users/Controller/UsersController.php(169): UsersController->_getMailInstance()
+#5 /var/www/application/current/app/Plugin/Users/Controller/UsersController.php(159): UsersController->_setDefaultEmail()
+#6 /var/www/application/current/app/Controller/AppUsersController.php(5): UsersController->beforeFilter()
+#7 [internal function]: AppUsersController->beforeFilter(Object(CakeEvent))
+#8 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Event/CakeEventManager.php(243): call_user_func(Array, Object(CakeEvent))
+#9 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Controller/Controller.php(676): CakeEventManager->dispatch(Object(CakeEvent))
+#10 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Routing/Dispatcher.php(189): Controller->startupProcess()
+#11 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(AppUsersController), Object(CakeRequest))
+#12 /var/www/application/current/app/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2017-01-04 13:08:04 Error: [MissingTableException] Table users for model User was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'users',
+  'class' => 'User',
+  'ds' => 'default',
+)
+Request URL: /users/login
+Stack Trace:
+#0 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Model/Model.php(3572): Model->setSource('users')
+#1 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Model/Model.php(808): Model->getDataSource()
+#2 /var/www/application/current/app/Plugin/Users/Controller/UsersController.php(864): Model->__call('getMailInstance', Array)
+#3 /var/www/application/current/app/Plugin/Users/Controller/UsersController.php(864): AppModel->getMailInstance()
+#4 /var/www/application/current/app/Plugin/Users/Controller/UsersController.php(169): UsersController->_getMailInstance()
+#5 /var/www/application/current/app/Plugin/Users/Controller/UsersController.php(159): UsersController->_setDefaultEmail()
+#6 /var/www/application/current/app/Controller/AppUsersController.php(5): UsersController->beforeFilter()
+#7 [internal function]: AppUsersController->beforeFilter(Object(CakeEvent))
+#8 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Event/CakeEventManager.php(243): call_user_func(Array, Object(CakeEvent))
+#9 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Controller/Controller.php(676): CakeEventManager->dispatch(Object(CakeEvent))
+#10 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Routing/Dispatcher.php(189): Controller->startupProcess()
+#11 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(AppUsersController), Object(CakeRequest))
+#12 /var/www/application/current/app/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2017-01-04 13:13:55 Error: [MissingTableException] Table users for model User was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'users',
+  'class' => 'User',
+  'ds' => 'default',
+)
+Request URL: /users/login
+Stack Trace:
+#0 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Model/Model.php(3572): Model->setSource('users')
+#1 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Model/Model.php(808): Model->getDataSource()
+#2 /var/www/application/current/app/Plugin/Users/Controller/UsersController.php(864): Model->__call('getMailInstance', Array)
+#3 /var/www/application/current/app/Plugin/Users/Controller/UsersController.php(864): AppModel->getMailInstance()
+#4 /var/www/application/current/app/Plugin/Users/Controller/UsersController.php(169): UsersController->_getMailInstance()
+#5 /var/www/application/current/app/Plugin/Users/Controller/UsersController.php(159): UsersController->_setDefaultEmail()
+#6 /var/www/application/current/app/Controller/AppUsersController.php(5): UsersController->beforeFilter()
+#7 [internal function]: AppUsersController->beforeFilter(Object(CakeEvent))
+#8 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Event/CakeEventManager.php(243): call_user_func(Array, Object(CakeEvent))
+#9 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Controller/Controller.php(676): CakeEventManager->dispatch(Object(CakeEvent))
+#10 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Routing/Dispatcher.php(189): Controller->startupProcess()
+#11 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(AppUsersController), Object(CakeRequest))
+#12 /var/www/application/current/app/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2017-01-04 13:26:53 Error: [MissingTableException] Table users for model User was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'users',
+  'class' => 'User',
+  'ds' => 'default',
+)
+Request URL: /users/login
+Stack Trace:
+#0 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Model/Model.php(3572): Model->setSource('users')
+#1 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Model/Model.php(808): Model->getDataSource()
+#2 /var/www/application/current/app/Plugin/Users/Controller/UsersController.php(864): Model->__call('getMailInstance', Array)
+#3 /var/www/application/current/app/Plugin/Users/Controller/UsersController.php(864): AppModel->getMailInstance()
+#4 /var/www/application/current/app/Plugin/Users/Controller/UsersController.php(169): UsersController->_getMailInstance()
+#5 /var/www/application/current/app/Plugin/Users/Controller/UsersController.php(159): UsersController->_setDefaultEmail()
+#6 /var/www/application/current/app/Controller/AppUsersController.php(5): UsersController->beforeFilter()
+#7 [internal function]: AppUsersController->beforeFilter(Object(CakeEvent))
+#8 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Event/CakeEventManager.php(243): call_user_func(Array, Object(CakeEvent))
+#9 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Controller/Controller.php(676): CakeEventManager->dispatch(Object(CakeEvent))
+#10 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Routing/Dispatcher.php(189): Controller->startupProcess()
+#11 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(AppUsersController), Object(CakeRequest))
+#12 /var/www/application/current/app/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2017-01-04 13:26:59 Error: [MissingTableException] Table users for model User was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'users',
+  'class' => 'User',
+  'ds' => 'default',
+)
+Request URL: /users/login
+Stack Trace:
+#0 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Model/Model.php(3572): Model->setSource('users')
+#1 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Model/Model.php(808): Model->getDataSource()
+#2 /var/www/application/current/app/Plugin/Users/Controller/UsersController.php(864): Model->__call('getMailInstance', Array)
+#3 /var/www/application/current/app/Plugin/Users/Controller/UsersController.php(864): AppModel->getMailInstance()
+#4 /var/www/application/current/app/Plugin/Users/Controller/UsersController.php(169): UsersController->_getMailInstance()
+#5 /var/www/application/current/app/Plugin/Users/Controller/UsersController.php(159): UsersController->_setDefaultEmail()
+#6 /var/www/application/current/app/Controller/AppUsersController.php(5): UsersController->beforeFilter()
+#7 [internal function]: AppUsersController->beforeFilter(Object(CakeEvent))
+#8 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Event/CakeEventManager.php(243): call_user_func(Array, Object(CakeEvent))
+#9 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Controller/Controller.php(676): CakeEventManager->dispatch(Object(CakeEvent))
+#10 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Routing/Dispatcher.php(189): Controller->startupProcess()
+#11 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(AppUsersController), Object(CakeRequest))
+#12 /var/www/application/current/app/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2017-01-04 13:27:00 Error: [MissingTableException] Table users for model User was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'users',
+  'class' => 'User',
+  'ds' => 'default',
+)
+Request URL: /users/login
+Stack Trace:
+#0 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Model/Model.php(3572): Model->setSource('users')
+#1 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Model/Model.php(808): Model->getDataSource()
+#2 /var/www/application/current/app/Plugin/Users/Controller/UsersController.php(864): Model->__call('getMailInstance', Array)
+#3 /var/www/application/current/app/Plugin/Users/Controller/UsersController.php(864): AppModel->getMailInstance()
+#4 /var/www/application/current/app/Plugin/Users/Controller/UsersController.php(169): UsersController->_getMailInstance()
+#5 /var/www/application/current/app/Plugin/Users/Controller/UsersController.php(159): UsersController->_setDefaultEmail()
+#6 /var/www/application/current/app/Controller/AppUsersController.php(5): UsersController->beforeFilter()
+#7 [internal function]: AppUsersController->beforeFilter(Object(CakeEvent))
+#8 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Event/CakeEventManager.php(243): call_user_func(Array, Object(CakeEvent))
+#9 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Controller/Controller.php(676): CakeEventManager->dispatch(Object(CakeEvent))
+#10 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Routing/Dispatcher.php(189): Controller->startupProcess()
+#11 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(AppUsersController), Object(CakeRequest))
+#12 /var/www/application/current/app/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2017-01-04 13:27:00 Error: [MissingTableException] Table users for model User was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'users',
+  'class' => 'User',
+  'ds' => 'default',
+)
+Request URL: /users/login
+Stack Trace:
+#0 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Model/Model.php(3572): Model->setSource('users')
+#1 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Model/Model.php(808): Model->getDataSource()
+#2 /var/www/application/current/app/Plugin/Users/Controller/UsersController.php(864): Model->__call('getMailInstance', Array)
+#3 /var/www/application/current/app/Plugin/Users/Controller/UsersController.php(864): AppModel->getMailInstance()
+#4 /var/www/application/current/app/Plugin/Users/Controller/UsersController.php(169): UsersController->_getMailInstance()
+#5 /var/www/application/current/app/Plugin/Users/Controller/UsersController.php(159): UsersController->_setDefaultEmail()
+#6 /var/www/application/current/app/Controller/AppUsersController.php(5): UsersController->beforeFilter()
+#7 [internal function]: AppUsersController->beforeFilter(Object(CakeEvent))
+#8 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Event/CakeEventManager.php(243): call_user_func(Array, Object(CakeEvent))
+#9 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Controller/Controller.php(676): CakeEventManager->dispatch(Object(CakeEvent))
+#10 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Routing/Dispatcher.php(189): Controller->startupProcess()
+#11 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(AppUsersController), Object(CakeRequest))
+#12 /var/www/application/current/app/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2017-01-04 13:27:03 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'getMailInstance' at line 1
+Request URL: /users/login
+Stack Trace:
+#0 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Model/Datasource/DboSource.php(458): PDOStatement->execute(Array)
+#1 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Model/Datasource/DboSource.php(424): DboSource->_execute('getMailInstance', Array)
+#2 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Model/Datasource/DboSource.php(666): DboSource->execute('getMailInstance', Array, Array)
+#3 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Model/Datasource/DboSource.php(609): DboSource->fetchAll('getMailInstance', Array, Array)
+#4 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Model/Model.php(808): DboSource->query('getMailInstance', Array, Object(AppModel))
+#5 /var/www/application/current/app/Plugin/Users/Controller/UsersController.php(864): Model->__call('getMailInstance', Array)
+#6 /var/www/application/current/app/Plugin/Users/Controller/UsersController.php(864): AppModel->getMailInstance()
+#7 /var/www/application/current/app/Plugin/Users/Controller/UsersController.php(169): UsersController->_getMailInstance()
+#8 /var/www/application/current/app/Plugin/Users/Controller/UsersController.php(159): UsersController->_setDefaultEmail()
+#9 /var/www/application/current/app/Controller/AppUsersController.php(5): UsersController->beforeFilter()
+#10 [internal function]: AppUsersController->beforeFilter(Object(CakeEvent))
+#11 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Event/CakeEventManager.php(243): call_user_func(Array, Object(CakeEvent))
+#12 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Controller/Controller.php(676): CakeEventManager->dispatch(Object(CakeEvent))
+#13 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Routing/Dispatcher.php(189): Controller->startupProcess()
+#14 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(AppUsersController), Object(CakeRequest))
+#15 /var/www/application/current/app/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#16 {main}
+2017-01-04 13:27:05 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'getMailInstance' at line 1
+Request URL: /users/login
+Stack Trace:
+#0 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Model/Datasource/DboSource.php(458): PDOStatement->execute(Array)
+#1 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Model/Datasource/DboSource.php(424): DboSource->_execute('getMailInstance', Array)
+#2 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Model/Datasource/DboSource.php(666): DboSource->execute('getMailInstance', Array, Array)
+#3 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Model/Datasource/DboSource.php(609): DboSource->fetchAll('getMailInstance', Array, Array)
+#4 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Model/Model.php(808): DboSource->query('getMailInstance', Array, Object(AppModel))
+#5 /var/www/application/current/app/Plugin/Users/Controller/UsersController.php(864): Model->__call('getMailInstance', Array)
+#6 /var/www/application/current/app/Plugin/Users/Controller/UsersController.php(864): AppModel->getMailInstance()
+#7 /var/www/application/current/app/Plugin/Users/Controller/UsersController.php(169): UsersController->_getMailInstance()
+#8 /var/www/application/current/app/Plugin/Users/Controller/UsersController.php(159): UsersController->_setDefaultEmail()
+#9 /var/www/application/current/app/Controller/AppUsersController.php(5): UsersController->beforeFilter()
+#10 [internal function]: AppUsersController->beforeFilter(Object(CakeEvent))
+#11 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Event/CakeEventManager.php(243): call_user_func(Array, Object(CakeEvent))
+#12 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Controller/Controller.php(676): CakeEventManager->dispatch(Object(CakeEvent))
+#13 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Routing/Dispatcher.php(189): Controller->startupProcess()
+#14 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(AppUsersController), Object(CakeRequest))
+#15 /var/www/application/current/app/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#16 {main}
+2017-01-04 13:27:05 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'getMailInstance' at line 1
+Request URL: /users/login
+Stack Trace:
+#0 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Model/Datasource/DboSource.php(458): PDOStatement->execute(Array)
+#1 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Model/Datasource/DboSource.php(424): DboSource->_execute('getMailInstance', Array)
+#2 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Model/Datasource/DboSource.php(666): DboSource->execute('getMailInstance', Array, Array)
+#3 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Model/Datasource/DboSource.php(609): DboSource->fetchAll('getMailInstance', Array, Array)
+#4 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Model/Model.php(808): DboSource->query('getMailInstance', Array, Object(AppModel))
+#5 /var/www/application/current/app/Plugin/Users/Controller/UsersController.php(864): Model->__call('getMailInstance', Array)
+#6 /var/www/application/current/app/Plugin/Users/Controller/UsersController.php(864): AppModel->getMailInstance()
+#7 /var/www/application/current/app/Plugin/Users/Controller/UsersController.php(169): UsersController->_getMailInstance()
+#8 /var/www/application/current/app/Plugin/Users/Controller/UsersController.php(159): UsersController->_setDefaultEmail()
+#9 /var/www/application/current/app/Controller/AppUsersController.php(5): UsersController->beforeFilter()
+#10 [internal function]: AppUsersController->beforeFilter(Object(CakeEvent))
+#11 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Event/CakeEventManager.php(243): call_user_func(Array, Object(CakeEvent))
+#12 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Controller/Controller.php(676): CakeEventManager->dispatch(Object(CakeEvent))
+#13 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Routing/Dispatcher.php(189): Controller->startupProcess()
+#14 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(AppUsersController), Object(CakeRequest))
+#15 /var/www/application/current/app/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#16 {main}
+2017-01-04 13:27:05 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'getMailInstance' at line 1
+Request URL: /users/login
+Stack Trace:
+#0 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Model/Datasource/DboSource.php(458): PDOStatement->execute(Array)
+#1 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Model/Datasource/DboSource.php(424): DboSource->_execute('getMailInstance', Array)
+#2 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Model/Datasource/DboSource.php(666): DboSource->execute('getMailInstance', Array, Array)
+#3 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Model/Datasource/DboSource.php(609): DboSource->fetchAll('getMailInstance', Array, Array)
+#4 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Model/Model.php(808): DboSource->query('getMailInstance', Array, Object(AppModel))
+#5 /var/www/application/current/app/Plugin/Users/Controller/UsersController.php(864): Model->__call('getMailInstance', Array)
+#6 /var/www/application/current/app/Plugin/Users/Controller/UsersController.php(864): AppModel->getMailInstance()
+#7 /var/www/application/current/app/Plugin/Users/Controller/UsersController.php(169): UsersController->_getMailInstance()
+#8 /var/www/application/current/app/Plugin/Users/Controller/UsersController.php(159): UsersController->_setDefaultEmail()
+#9 /var/www/application/current/app/Controller/AppUsersController.php(5): UsersController->beforeFilter()
+#10 [internal function]: AppUsersController->beforeFilter(Object(CakeEvent))
+#11 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Event/CakeEventManager.php(243): call_user_func(Array, Object(CakeEvent))
+#12 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Controller/Controller.php(676): CakeEventManager->dispatch(Object(CakeEvent))
+#13 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Routing/Dispatcher.php(189): Controller->startupProcess()
+#14 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(AppUsersController), Object(CakeRequest))
+#15 /var/www/application/current/app/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#16 {main}
+2017-01-04 13:27:31 Error: [ConfigureException] /var/www/application/current/app/Config/email.php not found.
+Request URL: /login
+Stack Trace:
+#0 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Network/Email/CakeEmail.php(1136): CakeEmail->_applyConfig('default')
+#1 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Network/Email/CakeEmail.php(355): CakeEmail->config('default')
+#2 /var/www/application/current/app/Plugin/Users/Model/User.php(929): CakeEmail->__construct('default')
+#3 /var/www/application/current/app/Plugin/Users/Controller/UsersController.php(864): User->getMailInstance()
+#4 /var/www/application/current/app/Plugin/Users/Controller/UsersController.php(169): UsersController->_getMailInstance()
+#5 /var/www/application/current/app/Plugin/Users/Controller/UsersController.php(159): UsersController->_setDefaultEmail()
+#6 [internal function]: UsersController->beforeFilter(Object(CakeEvent))
+#7 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Event/CakeEventManager.php(243): call_user_func(Array, Object(CakeEvent))
+#8 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Controller/Controller.php(676): CakeEventManager->dispatch(Object(CakeEvent))
+#9 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Routing/Dispatcher.php(189): Controller->startupProcess()
+#10 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#11 /var/www/application/current/app/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2017-01-04 13:29:03 Error: [MissingTableException] Table users for model User was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'users',
+  'class' => 'User',
+  'ds' => 'default',
+)
+Request URL: /users/login
+Stack Trace:
+#0 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Model/Model.php(3572): Model->setSource('users')
+#1 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Model/Model.php(808): Model->getDataSource()
+#2 /var/www/application/current/app/Plugin/Users/Controller/UsersController.php(864): Model->__call('getMailInstance', Array)
+#3 /var/www/application/current/app/Plugin/Users/Controller/UsersController.php(864): AppModel->getMailInstance()
+#4 /var/www/application/current/app/Plugin/Users/Controller/UsersController.php(169): UsersController->_getMailInstance()
+#5 /var/www/application/current/app/Plugin/Users/Controller/UsersController.php(159): UsersController->_setDefaultEmail()
+#6 /var/www/application/current/app/Controller/AppUsersController.php(5): UsersController->beforeFilter()
+#7 [internal function]: AppUsersController->beforeFilter(Object(CakeEvent))
+#8 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Event/CakeEventManager.php(243): call_user_func(Array, Object(CakeEvent))
+#9 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Controller/Controller.php(676): CakeEventManager->dispatch(Object(CakeEvent))
+#10 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Routing/Dispatcher.php(189): Controller->startupProcess()
+#11 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(AppUsersController), Object(CakeRequest))
+#12 /var/www/application/current/app/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2017-01-04 13:29:03 Error: [MissingTableException] Table users for model User was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'users',
+  'class' => 'User',
+  'ds' => 'default',
+)
+Request URL: /users/login
+Stack Trace:
+#0 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Model/Model.php(3572): Model->setSource('users')
+#1 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Model/Model.php(808): Model->getDataSource()
+#2 /var/www/application/current/app/Plugin/Users/Controller/UsersController.php(864): Model->__call('getMailInstance', Array)
+#3 /var/www/application/current/app/Plugin/Users/Controller/UsersController.php(864): AppModel->getMailInstance()
+#4 /var/www/application/current/app/Plugin/Users/Controller/UsersController.php(169): UsersController->_getMailInstance()
+#5 /var/www/application/current/app/Plugin/Users/Controller/UsersController.php(159): UsersController->_setDefaultEmail()
+#6 /var/www/application/current/app/Controller/AppUsersController.php(5): UsersController->beforeFilter()
+#7 [internal function]: AppUsersController->beforeFilter(Object(CakeEvent))
+#8 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Event/CakeEventManager.php(243): call_user_func(Array, Object(CakeEvent))
+#9 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Controller/Controller.php(676): CakeEventManager->dispatch(Object(CakeEvent))
+#10 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Routing/Dispatcher.php(189): Controller->startupProcess()
+#11 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(AppUsersController), Object(CakeRequest))
+#12 /var/www/application/current/app/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2017-01-04 13:29:03 Error: [MissingTableException] Table users for model User was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'users',
+  'class' => 'User',
+  'ds' => 'default',
+)
+Request URL: /users/login
+Stack Trace:
+#0 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Model/Model.php(3572): Model->setSource('users')
+#1 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Model/Model.php(808): Model->getDataSource()
+#2 /var/www/application/current/app/Plugin/Users/Controller/UsersController.php(864): Model->__call('getMailInstance', Array)
+#3 /var/www/application/current/app/Plugin/Users/Controller/UsersController.php(864): AppModel->getMailInstance()
+#4 /var/www/application/current/app/Plugin/Users/Controller/UsersController.php(169): UsersController->_getMailInstance()
+#5 /var/www/application/current/app/Plugin/Users/Controller/UsersController.php(159): UsersController->_setDefaultEmail()
+#6 /var/www/application/current/app/Controller/AppUsersController.php(5): UsersController->beforeFilter()
+#7 [internal function]: AppUsersController->beforeFilter(Object(CakeEvent))
+#8 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Event/CakeEventManager.php(243): call_user_func(Array, Object(CakeEvent))
+#9 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Controller/Controller.php(676): CakeEventManager->dispatch(Object(CakeEvent))
+#10 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Routing/Dispatcher.php(189): Controller->startupProcess()
+#11 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(AppUsersController), Object(CakeRequest))
+#12 /var/www/application/current/app/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2017-01-04 13:29:08 Error: [ConfigureException] /var/www/application/current/app/Config/email.php not found.
+Request URL: /login
+Stack Trace:
+#0 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Network/Email/CakeEmail.php(1136): CakeEmail->_applyConfig('default')
+#1 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Network/Email/CakeEmail.php(355): CakeEmail->config('default')
+#2 /var/www/application/current/app/Plugin/Users/Model/User.php(929): CakeEmail->__construct('default')
+#3 /var/www/application/current/app/Plugin/Users/Controller/UsersController.php(864): User->getMailInstance()
+#4 /var/www/application/current/app/Plugin/Users/Controller/UsersController.php(169): UsersController->_getMailInstance()
+#5 /var/www/application/current/app/Plugin/Users/Controller/UsersController.php(159): UsersController->_setDefaultEmail()
+#6 [internal function]: UsersController->beforeFilter(Object(CakeEvent))
+#7 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Event/CakeEventManager.php(243): call_user_func(Array, Object(CakeEvent))
+#8 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Controller/Controller.php(676): CakeEventManager->dispatch(Object(CakeEvent))
+#9 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Routing/Dispatcher.php(189): Controller->startupProcess()
+#10 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#11 /var/www/application/current/app/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2017-01-04 13:29:12 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'getMailInstance' at line 1
+Request URL: /users/login
+Stack Trace:
+#0 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Model/Datasource/DboSource.php(458): PDOStatement->execute(Array)
+#1 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Model/Datasource/DboSource.php(424): DboSource->_execute('getMailInstance', Array)
+#2 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Model/Datasource/DboSource.php(666): DboSource->execute('getMailInstance', Array, Array)
+#3 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Model/Datasource/DboSource.php(609): DboSource->fetchAll('getMailInstance', Array, Array)
+#4 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Model/Model.php(808): DboSource->query('getMailInstance', Array, Object(AppModel))
+#5 /var/www/application/current/app/Plugin/Users/Controller/UsersController.php(864): Model->__call('getMailInstance', Array)
+#6 /var/www/application/current/app/Plugin/Users/Controller/UsersController.php(864): AppModel->getMailInstance()
+#7 /var/www/application/current/app/Plugin/Users/Controller/UsersController.php(169): UsersController->_getMailInstance()
+#8 /var/www/application/current/app/Plugin/Users/Controller/UsersController.php(159): UsersController->_setDefaultEmail()
+#9 /var/www/application/current/app/Controller/AppUsersController.php(5): UsersController->beforeFilter()
+#10 [internal function]: AppUsersController->beforeFilter(Object(CakeEvent))
+#11 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Event/CakeEventManager.php(243): call_user_func(Array, Object(CakeEvent))
+#12 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Controller/Controller.php(676): CakeEventManager->dispatch(Object(CakeEvent))
+#13 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Routing/Dispatcher.php(189): Controller->startupProcess()
+#14 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(AppUsersController), Object(CakeRequest))
+#15 /var/www/application/current/app/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#16 {main}
+2017-01-04 13:36:27 Error: [MissingTableException] Table users for model User was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'users',
+  'class' => 'User',
+  'ds' => 'default',
+)
+Request URL: /users/login
+Stack Trace:
+#0 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Model/Model.php(3572): Model->setSource('users')
+#1 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Model/Model.php(808): Model->getDataSource()
+#2 /var/www/application/current/app/Plugin/Users/Controller/UsersController.php(864): Model->__call('getMailInstance', Array)
+#3 /var/www/application/current/app/Plugin/Users/Controller/UsersController.php(864): AppModel->getMailInstance()
+#4 /var/www/application/current/app/Plugin/Users/Controller/UsersController.php(169): UsersController->_getMailInstance()
+#5 /var/www/application/current/app/Plugin/Users/Controller/UsersController.php(159): UsersController->_setDefaultEmail()
+#6 /var/www/application/current/app/Controller/AppUsersController.php(5): UsersController->beforeFilter()
+#7 [internal function]: AppUsersController->beforeFilter(Object(CakeEvent))
+#8 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Event/CakeEventManager.php(243): call_user_func(Array, Object(CakeEvent))
+#9 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Controller/Controller.php(676): CakeEventManager->dispatch(Object(CakeEvent))
+#10 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Routing/Dispatcher.php(189): Controller->startupProcess()
+#11 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(AppUsersController), Object(CakeRequest))
+#12 /var/www/application/current/app/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2017-01-04 13:54:07 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'getMailInstance' at line 1
+Request URL: /users/login
+Stack Trace:
+#0 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Model/Datasource/DboSource.php(458): PDOStatement->execute(Array)
+#1 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Model/Datasource/DboSource.php(424): DboSource->_execute('getMailInstance', Array)
+#2 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Model/Datasource/DboSource.php(666): DboSource->execute('getMailInstance', Array, Array)
+#3 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Model/Datasource/DboSource.php(609): DboSource->fetchAll('getMailInstance', Array, Array)
+#4 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Model/Model.php(808): DboSource->query('getMailInstance', Array, Object(AppModel))
+#5 /var/www/application/current/app/Plugin/Users/Controller/UsersController.php(864): Model->__call('getMailInstance', Array)
+#6 /var/www/application/current/app/Plugin/Users/Controller/UsersController.php(864): AppModel->getMailInstance()
+#7 /var/www/application/current/app/Plugin/Users/Controller/UsersController.php(169): UsersController->_getMailInstance()
+#8 /var/www/application/current/app/Plugin/Users/Controller/UsersController.php(159): UsersController->_setDefaultEmail()
+#9 /var/www/application/current/app/Controller/AppUsersController.php(5): UsersController->beforeFilter()
+#10 [internal function]: AppUsersController->beforeFilter(Object(CakeEvent))
+#11 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Event/CakeEventManager.php(243): call_user_func(Array, Object(CakeEvent))
+#12 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Controller/Controller.php(676): CakeEventManager->dispatch(Object(CakeEvent))
+#13 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Routing/Dispatcher.php(189): Controller->startupProcess()
+#14 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(AppUsersController), Object(CakeRequest))
+#15 /var/www/application/current/app/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#16 {main}
+2017-01-04 13:55:33 Error: [MissingTableException] Table users for model User was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'users',
+  'class' => 'User',
+  'ds' => 'default',
+)
+Request URL: /users/login
+Stack Trace:
+#0 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Model/Model.php(3572): Model->setSource('users')
+#1 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Model/Model.php(808): Model->getDataSource()
+#2 /var/www/application/current/app/Plugin/Users/Controller/UsersController.php(864): Model->__call('getMailInstance', Array)
+#3 /var/www/application/current/app/Plugin/Users/Controller/UsersController.php(864): AppModel->getMailInstance()
+#4 /var/www/application/current/app/Plugin/Users/Controller/UsersController.php(169): UsersController->_getMailInstance()
+#5 /var/www/application/current/app/Plugin/Users/Controller/UsersController.php(159): UsersController->_setDefaultEmail()
+#6 /var/www/application/current/app/Controller/AppUsersController.php(5): UsersController->beforeFilter()
+#7 [internal function]: AppUsersController->beforeFilter(Object(CakeEvent))
+#8 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Event/CakeEventManager.php(243): call_user_func(Array, Object(CakeEvent))
+#9 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Controller/Controller.php(676): CakeEventManager->dispatch(Object(CakeEvent))
+#10 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Routing/Dispatcher.php(189): Controller->startupProcess()
+#11 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(AppUsersController), Object(CakeRequest))
+#12 /var/www/application/current/app/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2017-01-04 13:55:34 Error: [MissingTableException] Table users for model User was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'users',
+  'class' => 'User',
+  'ds' => 'default',
+)
+Request URL: /users/login
+Stack Trace:
+#0 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Model/Model.php(3572): Model->setSource('users')
+#1 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Model/Model.php(808): Model->getDataSource()
+#2 /var/www/application/current/app/Plugin/Users/Controller/UsersController.php(864): Model->__call('getMailInstance', Array)
+#3 /var/www/application/current/app/Plugin/Users/Controller/UsersController.php(864): AppModel->getMailInstance()
+#4 /var/www/application/current/app/Plugin/Users/Controller/UsersController.php(169): UsersController->_getMailInstance()
+#5 /var/www/application/current/app/Plugin/Users/Controller/UsersController.php(159): UsersController->_setDefaultEmail()
+#6 /var/www/application/current/app/Controller/AppUsersController.php(5): UsersController->beforeFilter()
+#7 [internal function]: AppUsersController->beforeFilter(Object(CakeEvent))
+#8 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Event/CakeEventManager.php(243): call_user_func(Array, Object(CakeEvent))
+#9 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Controller/Controller.php(676): CakeEventManager->dispatch(Object(CakeEvent))
+#10 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Routing/Dispatcher.php(189): Controller->startupProcess()
+#11 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(AppUsersController), Object(CakeRequest))
+#12 /var/www/application/current/app/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2017-01-04 13:55:34 Error: [MissingTableException] Table users for model User was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'users',
+  'class' => 'User',
+  'ds' => 'default',
+)
+Request URL: /users/login
+Stack Trace:
+#0 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Model/Model.php(3572): Model->setSource('users')
+#1 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Model/Model.php(808): Model->getDataSource()
+#2 /var/www/application/current/app/Plugin/Users/Controller/UsersController.php(864): Model->__call('getMailInstance', Array)
+#3 /var/www/application/current/app/Plugin/Users/Controller/UsersController.php(864): AppModel->getMailInstance()
+#4 /var/www/application/current/app/Plugin/Users/Controller/UsersController.php(169): UsersController->_getMailInstance()
+#5 /var/www/application/current/app/Plugin/Users/Controller/UsersController.php(159): UsersController->_setDefaultEmail()
+#6 /var/www/application/current/app/Controller/AppUsersController.php(5): UsersController->beforeFilter()
+#7 [internal function]: AppUsersController->beforeFilter(Object(CakeEvent))
+#8 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Event/CakeEventManager.php(243): call_user_func(Array, Object(CakeEvent))
+#9 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Controller/Controller.php(676): CakeEventManager->dispatch(Object(CakeEvent))
+#10 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Routing/Dispatcher.php(189): Controller->startupProcess()
+#11 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(AppUsersController), Object(CakeRequest))
+#12 /var/www/application/current/app/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2017-01-04 13:56:37 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'getMailInstance' at line 1
+Request URL: /users/login
+Stack Trace:
+#0 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Model/Datasource/DboSource.php(458): PDOStatement->execute(Array)
+#1 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Model/Datasource/DboSource.php(424): DboSource->_execute('getMailInstance', Array)
+#2 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Model/Datasource/DboSource.php(666): DboSource->execute('getMailInstance', Array, Array)
+#3 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Model/Datasource/DboSource.php(609): DboSource->fetchAll('getMailInstance', Array, Array)
+#4 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Model/Model.php(808): DboSource->query('getMailInstance', Array, Object(AppModel))
+#5 /var/www/application/current/app/Plugin/Users/Controller/UsersController.php(864): Model->__call('getMailInstance', Array)
+#6 /var/www/application/current/app/Plugin/Users/Controller/UsersController.php(864): AppModel->getMailInstance()
+#7 /var/www/application/current/app/Plugin/Users/Controller/UsersController.php(169): UsersController->_getMailInstance()
+#8 /var/www/application/current/app/Plugin/Users/Controller/UsersController.php(159): UsersController->_setDefaultEmail()
+#9 /var/www/application/current/app/Controller/AppUsersController.php(5): UsersController->beforeFilter()
+#10 [internal function]: AppUsersController->beforeFilter(Object(CakeEvent))
+#11 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Event/CakeEventManager.php(243): call_user_func(Array, Object(CakeEvent))
+#12 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Controller/Controller.php(676): CakeEventManager->dispatch(Object(CakeEvent))
+#13 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Routing/Dispatcher.php(189): Controller->startupProcess()
+#14 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(AppUsersController), Object(CakeRequest))
+#15 /var/www/application/current/app/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#16 {main}
+2017-01-04 13:58:08 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'getMailInstance' at line 1
+Request URL: /users/login
+Stack Trace:
+#0 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Model/Datasource/DboSource.php(458): PDOStatement->execute(Array)
+#1 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Model/Datasource/DboSource.php(424): DboSource->_execute('getMailInstance', Array)
+#2 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Model/Datasource/DboSource.php(666): DboSource->execute('getMailInstance', Array, Array)
+#3 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Model/Datasource/DboSource.php(609): DboSource->fetchAll('getMailInstance', Array, Array)
+#4 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Model/Model.php(808): DboSource->query('getMailInstance', Array, Object(AppModel))
+#5 /var/www/application/current/app/Plugin/Users/Controller/UsersController.php(864): Model->__call('getMailInstance', Array)
+#6 /var/www/application/current/app/Plugin/Users/Controller/UsersController.php(864): AppModel->getMailInstance()
+#7 /var/www/application/current/app/Plugin/Users/Controller/UsersController.php(169): UsersController->_getMailInstance()
+#8 /var/www/application/current/app/Plugin/Users/Controller/UsersController.php(159): UsersController->_setDefaultEmail()
+#9 /var/www/application/current/app/Controller/AppUsersController.php(5): UsersController->beforeFilter()
+#10 [internal function]: AppUsersController->beforeFilter(Object(CakeEvent))
+#11 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Event/CakeEventManager.php(243): call_user_func(Array, Object(CakeEvent))
+#12 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Controller/Controller.php(676): CakeEventManager->dispatch(Object(CakeEvent))
+#13 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Routing/Dispatcher.php(189): Controller->startupProcess()
+#14 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(AppUsersController), Object(CakeRequest))
+#15 /var/www/application/current/app/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#16 {main}
+2017-01-04 13:58:45 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'getMailInstance' at line 1
+Request URL: /users/login
+Stack Trace:
+#0 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Model/Datasource/DboSource.php(458): PDOStatement->execute(Array)
+#1 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Model/Datasource/DboSource.php(424): DboSource->_execute('getMailInstance', Array)
+#2 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Model/Datasource/DboSource.php(666): DboSource->execute('getMailInstance', Array, Array)
+#3 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Model/Datasource/DboSource.php(609): DboSource->fetchAll('getMailInstance', Array, Array)
+#4 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Model/Model.php(808): DboSource->query('getMailInstance', Array, Object(AppModel))
+#5 /var/www/application/current/app/Plugin/Users/Controller/UsersController.php(864): Model->__call('getMailInstance', Array)
+#6 /var/www/application/current/app/Plugin/Users/Controller/UsersController.php(864): AppModel->getMailInstance()
+#7 /var/www/application/current/app/Plugin/Users/Controller/UsersController.php(169): UsersController->_getMailInstance()
+#8 /var/www/application/current/app/Plugin/Users/Controller/UsersController.php(159): UsersController->_setDefaultEmail()
+#9 /var/www/application/current/app/Controller/AppUsersController.php(5): UsersController->beforeFilter()
+#10 [internal function]: AppUsersController->beforeFilter(Object(CakeEvent))
+#11 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Event/CakeEventManager.php(243): call_user_func(Array, Object(CakeEvent))
+#12 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Controller/Controller.php(676): CakeEventManager->dispatch(Object(CakeEvent))
+#13 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Routing/Dispatcher.php(189): Controller->startupProcess()
+#14 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(AppUsersController), Object(CakeRequest))
+#15 /var/www/application/current/app/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#16 {main}
+2017-01-04 13:58:46 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'getMailInstance' at line 1
+Request URL: /users/login
+Stack Trace:
+#0 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Model/Datasource/DboSource.php(458): PDOStatement->execute(Array)
+#1 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Model/Datasource/DboSource.php(424): DboSource->_execute('getMailInstance', Array)
+#2 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Model/Datasource/DboSource.php(666): DboSource->execute('getMailInstance', Array, Array)
+#3 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Model/Datasource/DboSource.php(609): DboSource->fetchAll('getMailInstance', Array, Array)
+#4 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Model/Model.php(808): DboSource->query('getMailInstance', Array, Object(AppModel))
+#5 /var/www/application/current/app/Plugin/Users/Controller/UsersController.php(864): Model->__call('getMailInstance', Array)
+#6 /var/www/application/current/app/Plugin/Users/Controller/UsersController.php(864): AppModel->getMailInstance()
+#7 /var/www/application/current/app/Plugin/Users/Controller/UsersController.php(169): UsersController->_getMailInstance()
+#8 /var/www/application/current/app/Plugin/Users/Controller/UsersController.php(159): UsersController->_setDefaultEmail()
+#9 /var/www/application/current/app/Controller/AppUsersController.php(5): UsersController->beforeFilter()
+#10 [internal function]: AppUsersController->beforeFilter(Object(CakeEvent))
+#11 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Event/CakeEventManager.php(243): call_user_func(Array, Object(CakeEvent))
+#12 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Controller/Controller.php(676): CakeEventManager->dispatch(Object(CakeEvent))
+#13 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Routing/Dispatcher.php(189): Controller->startupProcess()
+#14 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(AppUsersController), Object(CakeRequest))
+#15 /var/www/application/current/app/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#16 {main}
+2017-01-04 13:59:16 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'getMailInstance' at line 1
+Request URL: /users/login
+Stack Trace:
+#0 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Model/Datasource/DboSource.php(458): PDOStatement->execute(Array)
+#1 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Model/Datasource/DboSource.php(424): DboSource->_execute('getMailInstance', Array)
+#2 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Model/Datasource/DboSource.php(666): DboSource->execute('getMailInstance', Array, Array)
+#3 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Model/Datasource/DboSource.php(609): DboSource->fetchAll('getMailInstance', Array, Array)
+#4 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Model/Model.php(808): DboSource->query('getMailInstance', Array, Object(AppModel))
+#5 /var/www/application/current/app/Plugin/Users/Controller/UsersController.php(864): Model->__call('getMailInstance', Array)
+#6 /var/www/application/current/app/Plugin/Users/Controller/UsersController.php(864): AppModel->getMailInstance()
+#7 /var/www/application/current/app/Plugin/Users/Controller/UsersController.php(169): UsersController->_getMailInstance()
+#8 /var/www/application/current/app/Plugin/Users/Controller/UsersController.php(159): UsersController->_setDefaultEmail()
+#9 /var/www/application/current/app/Controller/AppUsersController.php(5): UsersController->beforeFilter()
+#10 [internal function]: AppUsersController->beforeFilter(Object(CakeEvent))
+#11 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Event/CakeEventManager.php(243): call_user_func(Array, Object(CakeEvent))
+#12 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Controller/Controller.php(676): CakeEventManager->dispatch(Object(CakeEvent))
+#13 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Routing/Dispatcher.php(189): Controller->startupProcess()
+#14 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(AppUsersController), Object(CakeRequest))
+#15 /var/www/application/current/app/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#16 {main}
+2017-01-04 13:59:38 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'getMailInstance' at line 1
+Request URL: /users/login
+Stack Trace:
+#0 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Model/Datasource/DboSource.php(458): PDOStatement->execute(Array)
+#1 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Model/Datasource/DboSource.php(424): DboSource->_execute('getMailInstance', Array)
+#2 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Model/Datasource/DboSource.php(666): DboSource->execute('getMailInstance', Array, Array)
+#3 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Model/Datasource/DboSource.php(609): DboSource->fetchAll('getMailInstance', Array, Array)
+#4 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Model/Model.php(808): DboSource->query('getMailInstance', Array, Object(AppModel))
+#5 /var/www/application/current/app/Plugin/Users/Controller/UsersController.php(864): Model->__call('getMailInstance', Array)
+#6 /var/www/application/current/app/Plugin/Users/Controller/UsersController.php(864): AppModel->getMailInstance()
+#7 /var/www/application/current/app/Plugin/Users/Controller/UsersController.php(169): UsersController->_getMailInstance()
+#8 /var/www/application/current/app/Plugin/Users/Controller/UsersController.php(159): UsersController->_setDefaultEmail()
+#9 /var/www/application/current/app/Controller/AppUsersController.php(5): UsersController->beforeFilter()
+#10 [internal function]: AppUsersController->beforeFilter(Object(CakeEvent))
+#11 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Event/CakeEventManager.php(243): call_user_func(Array, Object(CakeEvent))
+#12 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Controller/Controller.php(676): CakeEventManager->dispatch(Object(CakeEvent))
+#13 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Routing/Dispatcher.php(189): Controller->startupProcess()
+#14 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(AppUsersController), Object(CakeRequest))
+#15 /var/www/application/current/app/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#16 {main}
+2017-01-04 13:59:51 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'getMailInstance' at line 1
+Request URL: /users/login
+Stack Trace:
+#0 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Model/Datasource/DboSource.php(458): PDOStatement->execute(Array)
+#1 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Model/Datasource/DboSource.php(424): DboSource->_execute('getMailInstance', Array)
+#2 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Model/Datasource/DboSource.php(666): DboSource->execute('getMailInstance', Array, Array)
+#3 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Model/Datasource/DboSource.php(609): DboSource->fetchAll('getMailInstance', Array, Array)
+#4 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Model/Model.php(808): DboSource->query('getMailInstance', Array, Object(AppModel))
+#5 /var/www/application/current/app/Plugin/Users/Controller/UsersController.php(864): Model->__call('getMailInstance', Array)
+#6 /var/www/application/current/app/Plugin/Users/Controller/UsersController.php(864): AppModel->getMailInstance()
+#7 /var/www/application/current/app/Plugin/Users/Controller/UsersController.php(169): UsersController->_getMailInstance()
+#8 /var/www/application/current/app/Plugin/Users/Controller/UsersController.php(159): UsersController->_setDefaultEmail()
+#9 /var/www/application/current/app/Controller/AppUsersController.php(5): UsersController->beforeFilter()
+#10 [internal function]: AppUsersController->beforeFilter(Object(CakeEvent))
+#11 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Event/CakeEventManager.php(243): call_user_func(Array, Object(CakeEvent))
+#12 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Controller/Controller.php(676): CakeEventManager->dispatch(Object(CakeEvent))
+#13 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Routing/Dispatcher.php(189): Controller->startupProcess()
+#14 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(AppUsersController), Object(CakeRequest))
+#15 /var/www/application/current/app/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#16 {main}
+2017-01-04 14:00:01 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'getMailInstance' at line 1
+Request URL: /users/login
+Stack Trace:
+#0 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Model/Datasource/DboSource.php(458): PDOStatement->execute(Array)
+#1 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Model/Datasource/DboSource.php(424): DboSource->_execute('getMailInstance', Array)
+#2 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Model/Datasource/DboSource.php(666): DboSource->execute('getMailInstance', Array, Array)
+#3 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Model/Datasource/DboSource.php(609): DboSource->fetchAll('getMailInstance', Array, Array)
+#4 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Model/Model.php(808): DboSource->query('getMailInstance', Array, Object(AppModel))
+#5 /var/www/application/current/app/Plugin/Users/Controller/UsersController.php(864): Model->__call('getMailInstance', Array)
+#6 /var/www/application/current/app/Plugin/Users/Controller/UsersController.php(864): AppModel->getMailInstance()
+#7 /var/www/application/current/app/Plugin/Users/Controller/UsersController.php(169): UsersController->_getMailInstance()
+#8 /var/www/application/current/app/Plugin/Users/Controller/UsersController.php(159): UsersController->_setDefaultEmail()
+#9 /var/www/application/current/app/Controller/AppUsersController.php(5): UsersController->beforeFilter()
+#10 [internal function]: AppUsersController->beforeFilter(Object(CakeEvent))
+#11 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Event/CakeEventManager.php(243): call_user_func(Array, Object(CakeEvent))
+#12 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Controller/Controller.php(676): CakeEventManager->dispatch(Object(CakeEvent))
+#13 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Routing/Dispatcher.php(189): Controller->startupProcess()
+#14 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(AppUsersController), Object(CakeRequest))
+#15 /var/www/application/current/app/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#16 {main}
+2017-01-04 14:00:03 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'getMailInstance' at line 1
+Request URL: /users/login
+Stack Trace:
+#0 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Model/Datasource/DboSource.php(458): PDOStatement->execute(Array)
+#1 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Model/Datasource/DboSource.php(424): DboSource->_execute('getMailInstance', Array)
+#2 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Model/Datasource/DboSource.php(666): DboSource->execute('getMailInstance', Array, Array)
+#3 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Model/Datasource/DboSource.php(609): DboSource->fetchAll('getMailInstance', Array, Array)
+#4 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Model/Model.php(808): DboSource->query('getMailInstance', Array, Object(AppModel))
+#5 /var/www/application/current/app/Plugin/Users/Controller/UsersController.php(864): Model->__call('getMailInstance', Array)
+#6 /var/www/application/current/app/Plugin/Users/Controller/UsersController.php(864): AppModel->getMailInstance()
+#7 /var/www/application/current/app/Plugin/Users/Controller/UsersController.php(169): UsersController->_getMailInstance()
+#8 /var/www/application/current/app/Plugin/Users/Controller/UsersController.php(159): UsersController->_setDefaultEmail()
+#9 /var/www/application/current/app/Controller/AppUsersController.php(5): UsersController->beforeFilter()
+#10 [internal function]: AppUsersController->beforeFilter(Object(CakeEvent))
+#11 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Event/CakeEventManager.php(243): call_user_func(Array, Object(CakeEvent))
+#12 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Controller/Controller.php(676): CakeEventManager->dispatch(Object(CakeEvent))
+#13 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Routing/Dispatcher.php(189): Controller->startupProcess()
+#14 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(AppUsersController), Object(CakeRequest))
+#15 /var/www/application/current/app/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#16 {main}
+2017-01-04 14:00:04 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'getMailInstance' at line 1
+Request URL: /users/login
+Stack Trace:
+#0 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Model/Datasource/DboSource.php(458): PDOStatement->execute(Array)
+#1 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Model/Datasource/DboSource.php(424): DboSource->_execute('getMailInstance', Array)
+#2 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Model/Datasource/DboSource.php(666): DboSource->execute('getMailInstance', Array, Array)
+#3 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Model/Datasource/DboSource.php(609): DboSource->fetchAll('getMailInstance', Array, Array)
+#4 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Model/Model.php(808): DboSource->query('getMailInstance', Array, Object(AppModel))
+#5 /var/www/application/current/app/Plugin/Users/Controller/UsersController.php(864): Model->__call('getMailInstance', Array)
+#6 /var/www/application/current/app/Plugin/Users/Controller/UsersController.php(864): AppModel->getMailInstance()
+#7 /var/www/application/current/app/Plugin/Users/Controller/UsersController.php(169): UsersController->_getMailInstance()
+#8 /var/www/application/current/app/Plugin/Users/Controller/UsersController.php(159): UsersController->_setDefaultEmail()
+#9 /var/www/application/current/app/Controller/AppUsersController.php(5): UsersController->beforeFilter()
+#10 [internal function]: AppUsersController->beforeFilter(Object(CakeEvent))
+#11 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Event/CakeEventManager.php(243): call_user_func(Array, Object(CakeEvent))
+#12 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Controller/Controller.php(676): CakeEventManager->dispatch(Object(CakeEvent))
+#13 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Routing/Dispatcher.php(189): Controller->startupProcess()
+#14 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(AppUsersController), Object(CakeRequest))
+#15 /var/www/application/current/app/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#16 {main}
+2017-01-04 14:00:28 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'getMailInstance' at line 1
+Request URL: /users/login
+Stack Trace:
+#0 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Model/Datasource/DboSource.php(458): PDOStatement->execute(Array)
+#1 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Model/Datasource/DboSource.php(424): DboSource->_execute('getMailInstance', Array)
+#2 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Model/Datasource/DboSource.php(666): DboSource->execute('getMailInstance', Array, Array)
+#3 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Model/Datasource/DboSource.php(609): DboSource->fetchAll('getMailInstance', Array, Array)
+#4 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Model/Model.php(808): DboSource->query('getMailInstance', Array, Object(AppModel))
+#5 /var/www/application/current/app/Plugin/Users/Controller/UsersController.php(864): Model->__call('getMailInstance', Array)
+#6 /var/www/application/current/app/Plugin/Users/Controller/UsersController.php(864): AppModel->getMailInstance()
+#7 /var/www/application/current/app/Plugin/Users/Controller/UsersController.php(169): UsersController->_getMailInstance()
+#8 /var/www/application/current/app/Plugin/Users/Controller/UsersController.php(159): UsersController->_setDefaultEmail()
+#9 /var/www/application/current/app/Controller/AppUsersController.php(5): UsersController->beforeFilter()
+#10 [internal function]: AppUsersController->beforeFilter(Object(CakeEvent))
+#11 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Event/CakeEventManager.php(243): call_user_func(Array, Object(CakeEvent))
+#12 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Controller/Controller.php(676): CakeEventManager->dispatch(Object(CakeEvent))
+#13 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Routing/Dispatcher.php(189): Controller->startupProcess()
+#14 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(AppUsersController), Object(CakeRequest))
+#15 /var/www/application/current/app/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#16 {main}
+2017-01-04 14:01:42 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'getMailInstance' at line 1
+Request URL: /users/login
+Stack Trace:
+#0 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Model/Datasource/DboSource.php(458): PDOStatement->execute(Array)
+#1 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Model/Datasource/DboSource.php(424): DboSource->_execute('getMailInstance', Array)
+#2 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Model/Datasource/DboSource.php(666): DboSource->execute('getMailInstance', Array, Array)
+#3 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Model/Datasource/DboSource.php(609): DboSource->fetchAll('getMailInstance', Array, Array)
+#4 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Model/Model.php(808): DboSource->query('getMailInstance', Array, Object(AppModel))
+#5 /var/www/application/current/app/Plugin/Users/Controller/UsersController.php(864): Model->__call('getMailInstance', Array)
+#6 /var/www/application/current/app/Plugin/Users/Controller/UsersController.php(864): AppModel->getMailInstance()
+#7 /var/www/application/current/app/Plugin/Users/Controller/UsersController.php(169): UsersController->_getMailInstance()
+#8 /var/www/application/current/app/Plugin/Users/Controller/UsersController.php(159): UsersController->_setDefaultEmail()
+#9 /var/www/application/current/app/Controller/AppUsersController.php(5): UsersController->beforeFilter()
+#10 [internal function]: AppUsersController->beforeFilter(Object(CakeEvent))
+#11 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Event/CakeEventManager.php(243): call_user_func(Array, Object(CakeEvent))
+#12 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Controller/Controller.php(676): CakeEventManager->dispatch(Object(CakeEvent))
+#13 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Routing/Dispatcher.php(189): Controller->startupProcess()
+#14 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(AppUsersController), Object(CakeRequest))
+#15 /var/www/application/current/app/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#16 {main}
+2017-01-04 14:01:42 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'getMailInstance' at line 1
+Request URL: /users/login
+Stack Trace:
+#0 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Model/Datasource/DboSource.php(458): PDOStatement->execute(Array)
+#1 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Model/Datasource/DboSource.php(424): DboSource->_execute('getMailInstance', Array)
+#2 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Model/Datasource/DboSource.php(666): DboSource->execute('getMailInstance', Array, Array)
+#3 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Model/Datasource/DboSource.php(609): DboSource->fetchAll('getMailInstance', Array, Array)
+#4 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Model/Model.php(808): DboSource->query('getMailInstance', Array, Object(AppModel))
+#5 /var/www/application/current/app/Plugin/Users/Controller/UsersController.php(864): Model->__call('getMailInstance', Array)
+#6 /var/www/application/current/app/Plugin/Users/Controller/UsersController.php(864): AppModel->getMailInstance()
+#7 /var/www/application/current/app/Plugin/Users/Controller/UsersController.php(169): UsersController->_getMailInstance()
+#8 /var/www/application/current/app/Plugin/Users/Controller/UsersController.php(159): UsersController->_setDefaultEmail()
+#9 /var/www/application/current/app/Controller/AppUsersController.php(5): UsersController->beforeFilter()
+#10 [internal function]: AppUsersController->beforeFilter(Object(CakeEvent))
+#11 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Event/CakeEventManager.php(243): call_user_func(Array, Object(CakeEvent))
+#12 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Controller/Controller.php(676): CakeEventManager->dispatch(Object(CakeEvent))
+#13 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Routing/Dispatcher.php(189): Controller->startupProcess()
+#14 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(AppUsersController), Object(CakeRequest))
+#15 /var/www/application/current/app/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#16 {main}
+2017-01-04 14:01:45 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'getMailInstance' at line 1
+Request URL: /users/login
+Stack Trace:
+#0 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Model/Datasource/DboSource.php(458): PDOStatement->execute(Array)
+#1 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Model/Datasource/DboSource.php(424): DboSource->_execute('getMailInstance', Array)
+#2 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Model/Datasource/DboSource.php(666): DboSource->execute('getMailInstance', Array, Array)
+#3 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Model/Datasource/DboSource.php(609): DboSource->fetchAll('getMailInstance', Array, Array)
+#4 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Model/Model.php(808): DboSource->query('getMailInstance', Array, Object(AppModel))
+#5 /var/www/application/current/app/Plugin/Users/Controller/UsersController.php(864): Model->__call('getMailInstance', Array)
+#6 /var/www/application/current/app/Plugin/Users/Controller/UsersController.php(864): AppModel->getMailInstance()
+#7 /var/www/application/current/app/Plugin/Users/Controller/UsersController.php(169): UsersController->_getMailInstance()
+#8 /var/www/application/current/app/Plugin/Users/Controller/UsersController.php(159): UsersController->_setDefaultEmail()
+#9 /var/www/application/current/app/Controller/AppUsersController.php(5): UsersController->beforeFilter()
+#10 [internal function]: AppUsersController->beforeFilter(Object(CakeEvent))
+#11 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Event/CakeEventManager.php(243): call_user_func(Array, Object(CakeEvent))
+#12 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Controller/Controller.php(676): CakeEventManager->dispatch(Object(CakeEvent))
+#13 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Routing/Dispatcher.php(189): Controller->startupProcess()
+#14 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(AppUsersController), Object(CakeRequest))
+#15 /var/www/application/current/app/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#16 {main}
+2017-01-04 14:02:01 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'getMailInstance' at line 1
+Request URL: /users/login
+Stack Trace:
+#0 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Model/Datasource/DboSource.php(458): PDOStatement->execute(Array)
+#1 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Model/Datasource/DboSource.php(424): DboSource->_execute('getMailInstance', Array)
+#2 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Model/Datasource/DboSource.php(666): DboSource->execute('getMailInstance', Array, Array)
+#3 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Model/Datasource/DboSource.php(609): DboSource->fetchAll('getMailInstance', Array, Array)
+#4 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Model/Model.php(808): DboSource->query('getMailInstance', Array, Object(AppModel))
+#5 /var/www/application/current/app/Plugin/Users/Controller/UsersController.php(864): Model->__call('getMailInstance', Array)
+#6 /var/www/application/current/app/Plugin/Users/Controller/UsersController.php(864): AppModel->getMailInstance()
+#7 /var/www/application/current/app/Plugin/Users/Controller/UsersController.php(169): UsersController->_getMailInstance()
+#8 /var/www/application/current/app/Plugin/Users/Controller/UsersController.php(159): UsersController->_setDefaultEmail()
+#9 [internal function]: UsersController->beforeFilter(Object(CakeEvent))
+#10 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Event/CakeEventManager.php(243): call_user_func(Array, Object(CakeEvent))
+#11 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Controller/Controller.php(676): CakeEventManager->dispatch(Object(CakeEvent))
+#12 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Routing/Dispatcher.php(189): Controller->startupProcess()
+#13 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(AppUsersController), Object(CakeRequest))
+#14 /var/www/application/current/app/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#15 {main}
+2017-01-04 14:02:02 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'getMailInstance' at line 1
+Request URL: /users/login
+Stack Trace:
+#0 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Model/Datasource/DboSource.php(458): PDOStatement->execute(Array)
+#1 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Model/Datasource/DboSource.php(424): DboSource->_execute('getMailInstance', Array)
+#2 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Model/Datasource/DboSource.php(666): DboSource->execute('getMailInstance', Array, Array)
+#3 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Model/Datasource/DboSource.php(609): DboSource->fetchAll('getMailInstance', Array, Array)
+#4 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Model/Model.php(808): DboSource->query('getMailInstance', Array, Object(AppModel))
+#5 /var/www/application/current/app/Plugin/Users/Controller/UsersController.php(864): Model->__call('getMailInstance', Array)
+#6 /var/www/application/current/app/Plugin/Users/Controller/UsersController.php(864): AppModel->getMailInstance()
+#7 /var/www/application/current/app/Plugin/Users/Controller/UsersController.php(169): UsersController->_getMailInstance()
+#8 /var/www/application/current/app/Plugin/Users/Controller/UsersController.php(159): UsersController->_setDefaultEmail()
+#9 [internal function]: UsersController->beforeFilter(Object(CakeEvent))
+#10 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Event/CakeEventManager.php(243): call_user_func(Array, Object(CakeEvent))
+#11 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Controller/Controller.php(676): CakeEventManager->dispatch(Object(CakeEvent))
+#12 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Routing/Dispatcher.php(189): Controller->startupProcess()
+#13 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(AppUsersController), Object(CakeRequest))
+#14 /var/www/application/current/app/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#15 {main}
+2017-01-04 14:02:03 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'getMailInstance' at line 1
+Request URL: /users/login
+Stack Trace:
+#0 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Model/Datasource/DboSource.php(458): PDOStatement->execute(Array)
+#1 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Model/Datasource/DboSource.php(424): DboSource->_execute('getMailInstance', Array)
+#2 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Model/Datasource/DboSource.php(666): DboSource->execute('getMailInstance', Array, Array)
+#3 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Model/Datasource/DboSource.php(609): DboSource->fetchAll('getMailInstance', Array, Array)
+#4 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Model/Model.php(808): DboSource->query('getMailInstance', Array, Object(AppModel))
+#5 /var/www/application/current/app/Plugin/Users/Controller/UsersController.php(864): Model->__call('getMailInstance', Array)
+#6 /var/www/application/current/app/Plugin/Users/Controller/UsersController.php(864): AppModel->getMailInstance()
+#7 /var/www/application/current/app/Plugin/Users/Controller/UsersController.php(169): UsersController->_getMailInstance()
+#8 /var/www/application/current/app/Plugin/Users/Controller/UsersController.php(159): UsersController->_setDefaultEmail()
+#9 [internal function]: UsersController->beforeFilter(Object(CakeEvent))
+#10 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Event/CakeEventManager.php(243): call_user_func(Array, Object(CakeEvent))
+#11 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Controller/Controller.php(676): CakeEventManager->dispatch(Object(CakeEvent))
+#12 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Routing/Dispatcher.php(189): Controller->startupProcess()
+#13 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(AppUsersController), Object(CakeRequest))
+#14 /var/www/application/current/app/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#15 {main}
+2017-01-04 14:02:03 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'getMailInstance' at line 1
+Request URL: /users/login
+Stack Trace:
+#0 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Model/Datasource/DboSource.php(458): PDOStatement->execute(Array)
+#1 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Model/Datasource/DboSource.php(424): DboSource->_execute('getMailInstance', Array)
+#2 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Model/Datasource/DboSource.php(666): DboSource->execute('getMailInstance', Array, Array)
+#3 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Model/Datasource/DboSource.php(609): DboSource->fetchAll('getMailInstance', Array, Array)
+#4 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Model/Model.php(808): DboSource->query('getMailInstance', Array, Object(AppModel))
+#5 /var/www/application/current/app/Plugin/Users/Controller/UsersController.php(864): Model->__call('getMailInstance', Array)
+#6 /var/www/application/current/app/Plugin/Users/Controller/UsersController.php(864): AppModel->getMailInstance()
+#7 /var/www/application/current/app/Plugin/Users/Controller/UsersController.php(169): UsersController->_getMailInstance()
+#8 /var/www/application/current/app/Plugin/Users/Controller/UsersController.php(159): UsersController->_setDefaultEmail()
+#9 [internal function]: UsersController->beforeFilter(Object(CakeEvent))
+#10 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Event/CakeEventManager.php(243): call_user_func(Array, Object(CakeEvent))
+#11 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Controller/Controller.php(676): CakeEventManager->dispatch(Object(CakeEvent))
+#12 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Routing/Dispatcher.php(189): Controller->startupProcess()
+#13 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(AppUsersController), Object(CakeRequest))
+#14 /var/www/application/current/app/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#15 {main}
+2017-01-04 14:02:04 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'getMailInstance' at line 1
+Request URL: /users/login
+Stack Trace:
+#0 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Model/Datasource/DboSource.php(458): PDOStatement->execute(Array)
+#1 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Model/Datasource/DboSource.php(424): DboSource->_execute('getMailInstance', Array)
+#2 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Model/Datasource/DboSource.php(666): DboSource->execute('getMailInstance', Array, Array)
+#3 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Model/Datasource/DboSource.php(609): DboSource->fetchAll('getMailInstance', Array, Array)
+#4 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Model/Model.php(808): DboSource->query('getMailInstance', Array, Object(AppModel))
+#5 /var/www/application/current/app/Plugin/Users/Controller/UsersController.php(864): Model->__call('getMailInstance', Array)
+#6 /var/www/application/current/app/Plugin/Users/Controller/UsersController.php(864): AppModel->getMailInstance()
+#7 /var/www/application/current/app/Plugin/Users/Controller/UsersController.php(169): UsersController->_getMailInstance()
+#8 /var/www/application/current/app/Plugin/Users/Controller/UsersController.php(159): UsersController->_setDefaultEmail()
+#9 [internal function]: UsersController->beforeFilter(Object(CakeEvent))
+#10 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Event/CakeEventManager.php(243): call_user_func(Array, Object(CakeEvent))
+#11 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Controller/Controller.php(676): CakeEventManager->dispatch(Object(CakeEvent))
+#12 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Routing/Dispatcher.php(189): Controller->startupProcess()
+#13 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(AppUsersController), Object(CakeRequest))
+#14 /var/www/application/current/app/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#15 {main}
+2017-01-04 14:02:04 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'getMailInstance' at line 1
+Request URL: /users/login
+Stack Trace:
+#0 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Model/Datasource/DboSource.php(458): PDOStatement->execute(Array)
+#1 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Model/Datasource/DboSource.php(424): DboSource->_execute('getMailInstance', Array)
+#2 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Model/Datasource/DboSource.php(666): DboSource->execute('getMailInstance', Array, Array)
+#3 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Model/Datasource/DboSource.php(609): DboSource->fetchAll('getMailInstance', Array, Array)
+#4 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Model/Model.php(808): DboSource->query('getMailInstance', Array, Object(AppModel))
+#5 /var/www/application/current/app/Plugin/Users/Controller/UsersController.php(864): Model->__call('getMailInstance', Array)
+#6 /var/www/application/current/app/Plugin/Users/Controller/UsersController.php(864): AppModel->getMailInstance()
+#7 /var/www/application/current/app/Plugin/Users/Controller/UsersController.php(169): UsersController->_getMailInstance()
+#8 /var/www/application/current/app/Plugin/Users/Controller/UsersController.php(159): UsersController->_setDefaultEmail()
+#9 [internal function]: UsersController->beforeFilter(Object(CakeEvent))
+#10 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Event/CakeEventManager.php(243): call_user_func(Array, Object(CakeEvent))
+#11 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Controller/Controller.php(676): CakeEventManager->dispatch(Object(CakeEvent))
+#12 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Routing/Dispatcher.php(189): Controller->startupProcess()
+#13 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(AppUsersController), Object(CakeRequest))
+#14 /var/www/application/current/app/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#15 {main}
+2017-01-04 14:02:04 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'getMailInstance' at line 1
+Request URL: /users/login
+Stack Trace:
+#0 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Model/Datasource/DboSource.php(458): PDOStatement->execute(Array)
+#1 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Model/Datasource/DboSource.php(424): DboSource->_execute('getMailInstance', Array)
+#2 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Model/Datasource/DboSource.php(666): DboSource->execute('getMailInstance', Array, Array)
+#3 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Model/Datasource/DboSource.php(609): DboSource->fetchAll('getMailInstance', Array, Array)
+#4 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Model/Model.php(808): DboSource->query('getMailInstance', Array, Object(AppModel))
+#5 /var/www/application/current/app/Plugin/Users/Controller/UsersController.php(864): Model->__call('getMailInstance', Array)
+#6 /var/www/application/current/app/Plugin/Users/Controller/UsersController.php(864): AppModel->getMailInstance()
+#7 /var/www/application/current/app/Plugin/Users/Controller/UsersController.php(169): UsersController->_getMailInstance()
+#8 /var/www/application/current/app/Plugin/Users/Controller/UsersController.php(159): UsersController->_setDefaultEmail()
+#9 [internal function]: UsersController->beforeFilter(Object(CakeEvent))
+#10 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Event/CakeEventManager.php(243): call_user_func(Array, Object(CakeEvent))
+#11 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Controller/Controller.php(676): CakeEventManager->dispatch(Object(CakeEvent))
+#12 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Routing/Dispatcher.php(189): Controller->startupProcess()
+#13 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(AppUsersController), Object(CakeRequest))
+#14 /var/www/application/current/app/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#15 {main}
+2017-01-04 14:02:10 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'getMailInstance' at line 1
+Request URL: /users/login
+Stack Trace:
+#0 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Model/Datasource/DboSource.php(458): PDOStatement->execute(Array)
+#1 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Model/Datasource/DboSource.php(424): DboSource->_execute('getMailInstance', Array)
+#2 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Model/Datasource/DboSource.php(666): DboSource->execute('getMailInstance', Array, Array)
+#3 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Model/Datasource/DboSource.php(609): DboSource->fetchAll('getMailInstance', Array, Array)
+#4 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Model/Model.php(808): DboSource->query('getMailInstance', Array, Object(AppModel))
+#5 /var/www/application/current/app/Plugin/Users/Controller/UsersController.php(864): Model->__call('getMailInstance', Array)
+#6 /var/www/application/current/app/Plugin/Users/Controller/UsersController.php(864): AppModel->getMailInstance()
+#7 /var/www/application/current/app/Plugin/Users/Controller/UsersController.php(169): UsersController->_getMailInstance()
+#8 /var/www/application/current/app/Plugin/Users/Controller/UsersController.php(159): UsersController->_setDefaultEmail()
+#9 [internal function]: UsersController->beforeFilter(Object(CakeEvent))
+#10 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Event/CakeEventManager.php(243): call_user_func(Array, Object(CakeEvent))
+#11 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Controller/Controller.php(676): CakeEventManager->dispatch(Object(CakeEvent))
+#12 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Routing/Dispatcher.php(189): Controller->startupProcess()
+#13 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(AppUsersController), Object(CakeRequest))
+#14 /var/www/application/current/app/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#15 {main}
+2017-01-04 14:02:24 Error: [ConfigureException] /var/www/application/current/app/Config/email.php not found.
+Request URL: /users/users/login
+Stack Trace:
+#0 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Network/Email/CakeEmail.php(1136): CakeEmail->_applyConfig('default')
+#1 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Network/Email/CakeEmail.php(355): CakeEmail->config('default')
+#2 /var/www/application/current/app/Plugin/Users/Model/User.php(929): CakeEmail->__construct('default')
+#3 /var/www/application/current/app/Plugin/Users/Controller/UsersController.php(864): User->getMailInstance()
+#4 /var/www/application/current/app/Plugin/Users/Controller/UsersController.php(169): UsersController->_getMailInstance()
+#5 /var/www/application/current/app/Plugin/Users/Controller/UsersController.php(159): UsersController->_setDefaultEmail()
+#6 [internal function]: UsersController->beforeFilter(Object(CakeEvent))
+#7 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Event/CakeEventManager.php(243): call_user_func(Array, Object(CakeEvent))
+#8 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Controller/Controller.php(676): CakeEventManager->dispatch(Object(CakeEvent))
+#9 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Routing/Dispatcher.php(189): Controller->startupProcess()
+#10 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#11 /var/www/application/current/app/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2017-01-04 14:02:47 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'getMailInstance' at line 1
+Request URL: /users/login
+Stack Trace:
+#0 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Model/Datasource/DboSource.php(458): PDOStatement->execute(Array)
+#1 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Model/Datasource/DboSource.php(424): DboSource->_execute('getMailInstance', Array)
+#2 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Model/Datasource/DboSource.php(666): DboSource->execute('getMailInstance', Array, Array)
+#3 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Model/Datasource/DboSource.php(609): DboSource->fetchAll('getMailInstance', Array, Array)
+#4 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Model/Model.php(808): DboSource->query('getMailInstance', Array, Object(AppModel))
+#5 /var/www/application/current/app/Plugin/Users/Controller/UsersController.php(864): Model->__call('getMailInstance', Array)
+#6 /var/www/application/current/app/Plugin/Users/Controller/UsersController.php(864): AppModel->getMailInstance()
+#7 /var/www/application/current/app/Plugin/Users/Controller/UsersController.php(169): UsersController->_getMailInstance()
+#8 /var/www/application/current/app/Plugin/Users/Controller/UsersController.php(159): UsersController->_setDefaultEmail()
+#9 /var/www/application/current/app/Controller/AppUsersController.php(5): UsersController->beforeFilter()
+#10 [internal function]: AppUsersController->beforeFilter(Object(CakeEvent))
+#11 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Event/CakeEventManager.php(243): call_user_func(Array, Object(CakeEvent))
+#12 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Controller/Controller.php(676): CakeEventManager->dispatch(Object(CakeEvent))
+#13 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Routing/Dispatcher.php(189): Controller->startupProcess()
+#14 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(AppUsersController), Object(CakeRequest))
+#15 /var/www/application/current/app/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#16 {main}
+2017-01-04 14:03:17 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'getMailInstance' at line 1
+Request URL: /users/login
+Stack Trace:
+#0 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Model/Datasource/DboSource.php(458): PDOStatement->execute(Array)
+#1 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Model/Datasource/DboSource.php(424): DboSource->_execute('getMailInstance', Array)
+#2 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Model/Datasource/DboSource.php(666): DboSource->execute('getMailInstance', Array, Array)
+#3 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Model/Datasource/DboSource.php(609): DboSource->fetchAll('getMailInstance', Array, Array)
+#4 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Model/Model.php(808): DboSource->query('getMailInstance', Array, Object(AppModel))
+#5 /var/www/application/current/app/Plugin/Users/Controller/UsersController.php(864): Model->__call('getMailInstance', Array)
+#6 /var/www/application/current/app/Plugin/Users/Controller/UsersController.php(864): AppModel->getMailInstance()
+#7 /var/www/application/current/app/Plugin/Users/Controller/UsersController.php(169): UsersController->_getMailInstance()
+#8 /var/www/application/current/app/Plugin/Users/Controller/UsersController.php(159): UsersController->_setDefaultEmail()
+#9 /var/www/application/current/app/Controller/AppUsersController.php(5): UsersController->beforeFilter()
+#10 [internal function]: AppUsersController->beforeFilter(Object(CakeEvent))
+#11 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Event/CakeEventManager.php(243): call_user_func(Array, Object(CakeEvent))
+#12 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Controller/Controller.php(676): CakeEventManager->dispatch(Object(CakeEvent))
+#13 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Routing/Dispatcher.php(189): Controller->startupProcess()
+#14 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(AppUsersController), Object(CakeRequest))
+#15 /var/www/application/current/app/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#16 {main}
+2017-01-04 14:03:19 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'getMailInstance' at line 1
+Request URL: /users/login
+Stack Trace:
+#0 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Model/Datasource/DboSource.php(458): PDOStatement->execute(Array)
+#1 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Model/Datasource/DboSource.php(424): DboSource->_execute('getMailInstance', Array)
+#2 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Model/Datasource/DboSource.php(666): DboSource->execute('getMailInstance', Array, Array)
+#3 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Model/Datasource/DboSource.php(609): DboSource->fetchAll('getMailInstance', Array, Array)
+#4 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Model/Model.php(808): DboSource->query('getMailInstance', Array, Object(AppModel))
+#5 /var/www/application/current/app/Plugin/Users/Controller/UsersController.php(864): Model->__call('getMailInstance', Array)
+#6 /var/www/application/current/app/Plugin/Users/Controller/UsersController.php(864): AppModel->getMailInstance()
+#7 /var/www/application/current/app/Plugin/Users/Controller/UsersController.php(169): UsersController->_getMailInstance()
+#8 /var/www/application/current/app/Plugin/Users/Controller/UsersController.php(159): UsersController->_setDefaultEmail()
+#9 /var/www/application/current/app/Controller/AppUsersController.php(5): UsersController->beforeFilter()
+#10 [internal function]: AppUsersController->beforeFilter(Object(CakeEvent))
+#11 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Event/CakeEventManager.php(243): call_user_func(Array, Object(CakeEvent))
+#12 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Controller/Controller.php(676): CakeEventManager->dispatch(Object(CakeEvent))
+#13 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Routing/Dispatcher.php(189): Controller->startupProcess()
+#14 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(AppUsersController), Object(CakeRequest))
+#15 /var/www/application/current/app/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#16 {main}
+2017-01-04 14:03:43 Error: [MissingTableException] Table users for model User was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'users',
+  'class' => 'User',
+  'ds' => 'default',
+)
+Request URL: /users/login
+Stack Trace:
+#0 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Model/Model.php(3572): Model->setSource('users')
+#1 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Model/Model.php(808): Model->getDataSource()
+#2 /var/www/application/current/app/Plugin/Users/Controller/UsersController.php(864): Model->__call('getMailInstance', Array)
+#3 /var/www/application/current/app/Plugin/Users/Controller/UsersController.php(864): AppModel->getMailInstance()
+#4 /var/www/application/current/app/Plugin/Users/Controller/UsersController.php(169): UsersController->_getMailInstance()
+#5 /var/www/application/current/app/Plugin/Users/Controller/UsersController.php(159): UsersController->_setDefaultEmail()
+#6 /var/www/application/current/app/Controller/AppUsersController.php(5): UsersController->beforeFilter()
+#7 [internal function]: AppUsersController->beforeFilter(Object(CakeEvent))
+#8 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Event/CakeEventManager.php(243): call_user_func(Array, Object(CakeEvent))
+#9 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Controller/Controller.php(676): CakeEventManager->dispatch(Object(CakeEvent))
+#10 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Routing/Dispatcher.php(189): Controller->startupProcess()
+#11 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(AppUsersController), Object(CakeRequest))
+#12 /var/www/application/current/app/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2017-01-04 14:03:43 Error: [MissingTableException] Table users for model User was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'users',
+  'class' => 'User',
+  'ds' => 'default',
+)
+Request URL: /users/login
+Stack Trace:
+#0 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Model/Model.php(3572): Model->setSource('users')
+#1 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Model/Model.php(808): Model->getDataSource()
+#2 /var/www/application/current/app/Plugin/Users/Controller/UsersController.php(864): Model->__call('getMailInstance', Array)
+#3 /var/www/application/current/app/Plugin/Users/Controller/UsersController.php(864): AppModel->getMailInstance()
+#4 /var/www/application/current/app/Plugin/Users/Controller/UsersController.php(169): UsersController->_getMailInstance()
+#5 /var/www/application/current/app/Plugin/Users/Controller/UsersController.php(159): UsersController->_setDefaultEmail()
+#6 /var/www/application/current/app/Controller/AppUsersController.php(5): UsersController->beforeFilter()
+#7 [internal function]: AppUsersController->beforeFilter(Object(CakeEvent))
+#8 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Event/CakeEventManager.php(243): call_user_func(Array, Object(CakeEvent))
+#9 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Controller/Controller.php(676): CakeEventManager->dispatch(Object(CakeEvent))
+#10 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Routing/Dispatcher.php(189): Controller->startupProcess()
+#11 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(AppUsersController), Object(CakeRequest))
+#12 /var/www/application/current/app/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2017-01-04 14:03:44 Error: [MissingTableException] Table users for model User was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'users',
+  'class' => 'User',
+  'ds' => 'default',
+)
+Request URL: /users/login
+Stack Trace:
+#0 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Model/Model.php(3572): Model->setSource('users')
+#1 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Model/Model.php(808): Model->getDataSource()
+#2 /var/www/application/current/app/Plugin/Users/Controller/UsersController.php(864): Model->__call('getMailInstance', Array)
+#3 /var/www/application/current/app/Plugin/Users/Controller/UsersController.php(864): AppModel->getMailInstance()
+#4 /var/www/application/current/app/Plugin/Users/Controller/UsersController.php(169): UsersController->_getMailInstance()
+#5 /var/www/application/current/app/Plugin/Users/Controller/UsersController.php(159): UsersController->_setDefaultEmail()
+#6 /var/www/application/current/app/Controller/AppUsersController.php(5): UsersController->beforeFilter()
+#7 [internal function]: AppUsersController->beforeFilter(Object(CakeEvent))
+#8 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Event/CakeEventManager.php(243): call_user_func(Array, Object(CakeEvent))
+#9 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Controller/Controller.php(676): CakeEventManager->dispatch(Object(CakeEvent))
+#10 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Routing/Dispatcher.php(189): Controller->startupProcess()
+#11 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(AppUsersController), Object(CakeRequest))
+#12 /var/www/application/current/app/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2017-01-04 14:04:29 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'getMailInstance' at line 1
+Request URL: /users/login
+Stack Trace:
+#0 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Model/Datasource/DboSource.php(458): PDOStatement->execute(Array)
+#1 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Model/Datasource/DboSource.php(424): DboSource->_execute('getMailInstance', Array)
+#2 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Model/Datasource/DboSource.php(666): DboSource->execute('getMailInstance', Array, Array)
+#3 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Model/Datasource/DboSource.php(609): DboSource->fetchAll('getMailInstance', Array, Array)
+#4 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Model/Model.php(808): DboSource->query('getMailInstance', Array, Object(AppModel))
+#5 /var/www/application/current/app/Plugin/Users/Controller/UsersController.php(864): Model->__call('getMailInstance', Array)
+#6 /var/www/application/current/app/Plugin/Users/Controller/UsersController.php(864): AppModel->getMailInstance()
+#7 /var/www/application/current/app/Plugin/Users/Controller/UsersController.php(169): UsersController->_getMailInstance()
+#8 /var/www/application/current/app/Plugin/Users/Controller/UsersController.php(159): UsersController->_setDefaultEmail()
+#9 /var/www/application/current/app/Controller/AppUsersController.php(5): UsersController->beforeFilter()
+#10 [internal function]: AppUsersController->beforeFilter(Object(CakeEvent))
+#11 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Event/CakeEventManager.php(243): call_user_func(Array, Object(CakeEvent))
+#12 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Controller/Controller.php(676): CakeEventManager->dispatch(Object(CakeEvent))
+#13 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Routing/Dispatcher.php(189): Controller->startupProcess()
+#14 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(AppUsersController), Object(CakeRequest))
+#15 /var/www/application/current/app/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#16 {main}
+2017-01-04 14:07:15 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'getMailInstance' at line 1
+Request URL: /users/login
+Stack Trace:
+#0 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Model/Datasource/DboSource.php(458): PDOStatement->execute(Array)
+#1 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Model/Datasource/DboSource.php(424): DboSource->_execute('getMailInstance', Array)
+#2 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Model/Datasource/DboSource.php(666): DboSource->execute('getMailInstance', Array, Array)
+#3 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Model/Datasource/DboSource.php(609): DboSource->fetchAll('getMailInstance', Array, Array)
+#4 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Model/Model.php(808): DboSource->query('getMailInstance', Array, Object(AppModel))
+#5 /var/www/application/current/app/Plugin/Users/Controller/UsersController.php(864): Model->__call('getMailInstance', Array)
+#6 /var/www/application/current/app/Plugin/Users/Controller/UsersController.php(864): AppModel->getMailInstance()
+#7 /var/www/application/current/app/Plugin/Users/Controller/UsersController.php(169): UsersController->_getMailInstance()
+#8 /var/www/application/current/app/Plugin/Users/Controller/UsersController.php(159): UsersController->_setDefaultEmail()
+#9 /var/www/application/current/app/Controller/AppUsersController.php(5): UsersController->beforeFilter()
+#10 [internal function]: AppUsersController->beforeFilter(Object(CakeEvent))
+#11 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Event/CakeEventManager.php(243): call_user_func(Array, Object(CakeEvent))
+#12 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Controller/Controller.php(676): CakeEventManager->dispatch(Object(CakeEvent))
+#13 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Routing/Dispatcher.php(189): Controller->startupProcess()
+#14 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(AppUsersController), Object(CakeRequest))
+#15 /var/www/application/current/app/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#16 {main}
+2017-01-04 14:16:38 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'getMailInstance' at line 1
+Request URL: /users/login
+Stack Trace:
+#0 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Model/Datasource/DboSource.php(458): PDOStatement->execute(Array)
+#1 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Model/Datasource/DboSource.php(424): DboSource->_execute('getMailInstance', Array)
+#2 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Model/Datasource/DboSource.php(666): DboSource->execute('getMailInstance', Array, Array)
+#3 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Model/Datasource/DboSource.php(609): DboSource->fetchAll('getMailInstance', Array, Array)
+#4 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Model/Model.php(808): DboSource->query('getMailInstance', Array, Object(AppModel))
+#5 /var/www/application/current/app/Plugin/Users/Controller/UsersController.php(864): Model->__call('getMailInstance', Array)
+#6 /var/www/application/current/app/Plugin/Users/Controller/UsersController.php(864): AppModel->getMailInstance()
+#7 /var/www/application/current/app/Plugin/Users/Controller/UsersController.php(169): UsersController->_getMailInstance()
+#8 /var/www/application/current/app/Plugin/Users/Controller/UsersController.php(159): UsersController->_setDefaultEmail()
+#9 /var/www/application/current/app/Controller/AppUsersController.php(5): UsersController->beforeFilter()
+#10 [internal function]: AppUsersController->beforeFilter(Object(CakeEvent))
+#11 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Event/CakeEventManager.php(243): call_user_func(Array, Object(CakeEvent))
+#12 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Controller/Controller.php(676): CakeEventManager->dispatch(Object(CakeEvent))
+#13 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Routing/Dispatcher.php(189): Controller->startupProcess()
+#14 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(AppUsersController), Object(CakeRequest))
+#15 /var/www/application/current/app/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#16 {main}
+2017-01-04 14:19:07 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'getMailInstance' at line 1
+Request URL: /users/login
+Stack Trace:
+#0 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Model/Datasource/DboSource.php(458): PDOStatement->execute(Array)
+#1 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Model/Datasource/DboSource.php(424): DboSource->_execute('getMailInstance', Array)
+#2 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Model/Datasource/DboSource.php(666): DboSource->execute('getMailInstance', Array, Array)
+#3 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Model/Datasource/DboSource.php(609): DboSource->fetchAll('getMailInstance', Array, Array)
+#4 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Model/Model.php(808): DboSource->query('getMailInstance', Array, Object(AppModel))
+#5 /var/www/application/current/app/Plugin/Users/Controller/UsersController.php(864): Model->__call('getMailInstance', Array)
+#6 /var/www/application/current/app/Plugin/Users/Controller/UsersController.php(864): AppModel->getMailInstance()
+#7 /var/www/application/current/app/Plugin/Users/Controller/UsersController.php(169): UsersController->_getMailInstance()
+#8 /var/www/application/current/app/Plugin/Users/Controller/UsersController.php(159): UsersController->_setDefaultEmail()
+#9 /var/www/application/current/app/Controller/AppUsersController.php(5): UsersController->beforeFilter()
+#10 [internal function]: AppUsersController->beforeFilter(Object(CakeEvent))
+#11 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Event/CakeEventManager.php(243): call_user_func(Array, Object(CakeEvent))
+#12 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Controller/Controller.php(676): CakeEventManager->dispatch(Object(CakeEvent))
+#13 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Routing/Dispatcher.php(189): Controller->startupProcess()
+#14 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(AppUsersController), Object(CakeRequest))
+#15 /var/www/application/current/app/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#16 {main}
+2017-01-04 14:19:08 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'getMailInstance' at line 1
+Request URL: /users/login
+Stack Trace:
+#0 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Model/Datasource/DboSource.php(458): PDOStatement->execute(Array)
+#1 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Model/Datasource/DboSource.php(424): DboSource->_execute('getMailInstance', Array)
+#2 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Model/Datasource/DboSource.php(666): DboSource->execute('getMailInstance', Array, Array)
+#3 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Model/Datasource/DboSource.php(609): DboSource->fetchAll('getMailInstance', Array, Array)
+#4 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Model/Model.php(808): DboSource->query('getMailInstance', Array, Object(AppModel))
+#5 /var/www/application/current/app/Plugin/Users/Controller/UsersController.php(864): Model->__call('getMailInstance', Array)
+#6 /var/www/application/current/app/Plugin/Users/Controller/UsersController.php(864): AppModel->getMailInstance()
+#7 /var/www/application/current/app/Plugin/Users/Controller/UsersController.php(169): UsersController->_getMailInstance()
+#8 /var/www/application/current/app/Plugin/Users/Controller/UsersController.php(159): UsersController->_setDefaultEmail()
+#9 /var/www/application/current/app/Controller/AppUsersController.php(5): UsersController->beforeFilter()
+#10 [internal function]: AppUsersController->beforeFilter(Object(CakeEvent))
+#11 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Event/CakeEventManager.php(243): call_user_func(Array, Object(CakeEvent))
+#12 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Controller/Controller.php(676): CakeEventManager->dispatch(Object(CakeEvent))
+#13 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Routing/Dispatcher.php(189): Controller->startupProcess()
+#14 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(AppUsersController), Object(CakeRequest))
+#15 /var/www/application/current/app/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#16 {main}
+2017-01-04 14:22:00 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'getMailInstance' at line 1
+Request URL: /users/login
+Stack Trace:
+#0 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Model/Datasource/DboSource.php(458): PDOStatement->execute(Array)
+#1 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Model/Datasource/DboSource.php(424): DboSource->_execute('getMailInstance', Array)
+#2 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Model/Datasource/DboSource.php(666): DboSource->execute('getMailInstance', Array, Array)
+#3 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Model/Datasource/DboSource.php(609): DboSource->fetchAll('getMailInstance', Array, Array)
+#4 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Model/Model.php(808): DboSource->query('getMailInstance', Array, Object(AppModel))
+#5 /var/www/application/current/app/Plugin/Users/Controller/UsersController.php(864): Model->__call('getMailInstance', Array)
+#6 /var/www/application/current/app/Plugin/Users/Controller/UsersController.php(864): AppModel->getMailInstance()
+#7 /var/www/application/current/app/Plugin/Users/Controller/UsersController.php(169): UsersController->_getMailInstance()
+#8 /var/www/application/current/app/Plugin/Users/Controller/UsersController.php(159): UsersController->_setDefaultEmail()
+#9 /var/www/application/current/app/Controller/AppUsersController.php(5): UsersController->beforeFilter()
+#10 [internal function]: AppUsersController->beforeFilter(Object(CakeEvent))
+#11 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Event/CakeEventManager.php(243): call_user_func(Array, Object(CakeEvent))
+#12 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Controller/Controller.php(676): CakeEventManager->dispatch(Object(CakeEvent))
+#13 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Routing/Dispatcher.php(189): Controller->startupProcess()
+#14 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(AppUsersController), Object(CakeRequest))
+#15 /var/www/application/current/app/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#16 {main}
+2017-01-04 14:28:58 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'getMailInstance' at line 1
+Request URL: /users/login
+Stack Trace:
+#0 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Model/Datasource/DboSource.php(458): PDOStatement->execute(Array)
+#1 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Model/Datasource/DboSource.php(424): DboSource->_execute('getMailInstance', Array)
+#2 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Model/Datasource/DboSource.php(666): DboSource->execute('getMailInstance', Array, Array)
+#3 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Model/Datasource/DboSource.php(609): DboSource->fetchAll('getMailInstance', Array, Array)
+#4 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Model/Model.php(808): DboSource->query('getMailInstance', Array, Object(AppModel))
+#5 /var/www/application/current/app/Plugin/Users/Controller/UsersController.php(864): Model->__call('getMailInstance', Array)
+#6 /var/www/application/current/app/Plugin/Users/Controller/UsersController.php(864): AppModel->getMailInstance()
+#7 /var/www/application/current/app/Plugin/Users/Controller/UsersController.php(169): UsersController->_getMailInstance()
+#8 /var/www/application/current/app/Plugin/Users/Controller/UsersController.php(159): UsersController->_setDefaultEmail()
+#9 /var/www/application/current/app/Controller/AppUsersController.php(5): UsersController->beforeFilter()
+#10 [internal function]: AppUsersController->beforeFilter(Object(CakeEvent))
+#11 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Event/CakeEventManager.php(243): call_user_func(Array, Object(CakeEvent))
+#12 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Controller/Controller.php(676): CakeEventManager->dispatch(Object(CakeEvent))
+#13 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Routing/Dispatcher.php(189): Controller->startupProcess()
+#14 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(AppUsersController), Object(CakeRequest))
+#15 /var/www/application/current/app/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#16 {main}
+2017-01-04 14:29:00 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'getMailInstance' at line 1
+Request URL: /users/login
+Stack Trace:
+#0 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Model/Datasource/DboSource.php(458): PDOStatement->execute(Array)
+#1 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Model/Datasource/DboSource.php(424): DboSource->_execute('getMailInstance', Array)
+#2 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Model/Datasource/DboSource.php(666): DboSource->execute('getMailInstance', Array, Array)
+#3 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Model/Datasource/DboSource.php(609): DboSource->fetchAll('getMailInstance', Array, Array)
+#4 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Model/Model.php(808): DboSource->query('getMailInstance', Array, Object(AppModel))
+#5 /var/www/application/current/app/Plugin/Users/Controller/UsersController.php(864): Model->__call('getMailInstance', Array)
+#6 /var/www/application/current/app/Plugin/Users/Controller/UsersController.php(864): AppModel->getMailInstance()
+#7 /var/www/application/current/app/Plugin/Users/Controller/UsersController.php(169): UsersController->_getMailInstance()
+#8 /var/www/application/current/app/Plugin/Users/Controller/UsersController.php(159): UsersController->_setDefaultEmail()
+#9 /var/www/application/current/app/Controller/AppUsersController.php(5): UsersController->beforeFilter()
+#10 [internal function]: AppUsersController->beforeFilter(Object(CakeEvent))
+#11 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Event/CakeEventManager.php(243): call_user_func(Array, Object(CakeEvent))
+#12 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Controller/Controller.php(676): CakeEventManager->dispatch(Object(CakeEvent))
+#13 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Routing/Dispatcher.php(189): Controller->startupProcess()
+#14 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(AppUsersController), Object(CakeRequest))
+#15 /var/www/application/current/app/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#16 {main}
+2017-01-04 14:32:11 Error: [MissingTableException] Table users for model User was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'users',
+  'class' => 'User',
+  'ds' => 'default',
+)
+Request URL: /users/login
+Stack Trace:
+#0 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Model/Model.php(3572): Model->setSource('users')
+#1 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Model/Model.php(1368): Model->getDataSource()
+#2 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/View/Helper/FormHelper.php(215): Model->schema()
+#3 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/View/Helper/FormHelper.php(468): FormHelper->_introspectModel('User', 'fields')
+#4 /var/www/application/current/app/View/AppUsers/login.ctp(9): FormHelper->create('Users.User', Array)
+#5 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/View/View.php(954): include('/var/www/applic...')
+#6 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/View/View.php(916): View->_evaluate('/var/www/applic...', Array)
+#7 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/View/View.php(473): View->_render('/var/www/applic...')
+#8 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Controller/Controller.php(959): View->render('login', NULL)
+#9 /var/www/application/current/app/Controller/AppUsersController.php(20): Controller->render('login', NULL)
+#10 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Routing/Dispatcher.php(200): AppUsersController->render()
+#11 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(AppUsersController), Object(CakeRequest))
+#12 /var/www/application/current/app/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2017-01-04 14:32:11 Error: [MissingTableException] Table users for model User was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'users',
+  'class' => 'User',
+  'ds' => 'default',
+)
+Request URL: /users/login
+Stack Trace:
+#0 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Model/Model.php(3572): Model->setSource('users')
+#1 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Model/Model.php(1368): Model->getDataSource()
+#2 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/View/Helper/FormHelper.php(215): Model->schema()
+#3 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/View/Helper/FormHelper.php(468): FormHelper->_introspectModel('User', 'fields')
+#4 /var/www/application/current/app/View/AppUsers/login.ctp(9): FormHelper->create('Users.User', Array)
+#5 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/View/View.php(954): include('/var/www/applic...')
+#6 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/View/View.php(916): View->_evaluate('/var/www/applic...', Array)
+#7 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/View/View.php(473): View->_render('/var/www/applic...')
+#8 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Controller/Controller.php(959): View->render('login', NULL)
+#9 /var/www/application/current/app/Controller/AppUsersController.php(20): Controller->render('login', NULL)
+#10 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Routing/Dispatcher.php(200): AppUsersController->render()
+#11 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(AppUsersController), Object(CakeRequest))
+#12 /var/www/application/current/app/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2017-01-04 14:32:11 Error: [MissingTableException] Table users for model User was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'users',
+  'class' => 'User',
+  'ds' => 'default',
+)
+Request URL: /users/login
+Stack Trace:
+#0 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Model/Model.php(3572): Model->setSource('users')
+#1 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Model/Model.php(1368): Model->getDataSource()
+#2 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/View/Helper/FormHelper.php(215): Model->schema()
+#3 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/View/Helper/FormHelper.php(468): FormHelper->_introspectModel('User', 'fields')
+#4 /var/www/application/current/app/View/AppUsers/login.ctp(9): FormHelper->create('Users.User', Array)
+#5 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/View/View.php(954): include('/var/www/applic...')
+#6 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/View/View.php(916): View->_evaluate('/var/www/applic...', Array)
+#7 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/View/View.php(473): View->_render('/var/www/applic...')
+#8 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Controller/Controller.php(959): View->render('login', NULL)
+#9 /var/www/application/current/app/Controller/AppUsersController.php(20): Controller->render('login', NULL)
+#10 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Routing/Dispatcher.php(200): AppUsersController->render()
+#11 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(AppUsersController), Object(CakeRequest))
+#12 /var/www/application/current/app/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
